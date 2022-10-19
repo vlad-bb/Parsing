@@ -10,6 +10,7 @@ from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 # from .spiders.price import main as parser
 
+''' Скрипт для читання та запису данних в GoogleSheets'''
 
 SAMPLE_RANGE_NAME = 'table!A3:H279'
 

@@ -4,6 +4,9 @@ import json
 from datetime import datetime
 import re
 
+''' Парсер по сайту BABYPark, приймає список словників, ходить по посиланням і збирає ціну на товар, і додає в словник
+Записує в json і повертає True
+'''
 base_url = 'https://www.babypark.de'
 
 

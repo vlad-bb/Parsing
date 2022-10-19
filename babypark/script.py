@@ -5,9 +5,10 @@ import schedule
 from babypark.spiders.price import main as parser
 from google_sheets.quickstart import GoogleSheet
 from b_soup.main import main as bs_parser
+from repository.ddl import add_good
 
 
-def worker():
+def worker():  # функція читання/запису парсингу цін з сайта babypark
     data_list = []
     gs = GoogleSheet()
     table_value = gs.get_values()
@@ -44,12 +45,27 @@ def worker():
     print('Table was updated')
 
 
+def feed_goods():  # функція наповнення товарів з google sheets
+    gs = GoogleSheet()
+    table_value = gs.get_values()
+    print("Start reading from table")
+    counter = 0
+    for row in table_value:
+        ean_number = row[1]
+        if ean_number:
+            add_good(int(ean_number))
+            counter += 1
+    print(f'{counter} goods was added in DB')
+
+
 def main():
     print('Worker waiting')
     # schedule.every().day.at("15:00").do(worker)
     # schedule.every().day.at("20:21").do(worker)
     # schedule.every().day.at("20:23").do(worker)
-    schedule.every(3).hours.do(worker)
+    # schedule.every(3).hours.do(worker)
+    # worker()
+    feed_goods()
 
     while True:
         schedule.run_pending()

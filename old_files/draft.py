@@ -1,11 +1,11 @@
-rate = 1.68
-value_day = 40 * rate
-value_night = 40 * (rate / 2)
-payment = value_day + value_night
-print(type(payment))
+def sort_list(unsort_list: list):
+    unsort_list.sort()
+    return unsort_list
 
-rate = 1.68
-value_day = 40
-value_night = 40
-payment = (value_day * rate) + (value_night * (rate/2))
-print(type(payment))
+
+firrst = [1, 2, 4, 10, 12, 0, 5]
+first_list = sort_list(firrst)
+second = ['one', 'two', 'aba', 'zore', 'task']
+secon_list = sort_list(second)
+
+print(first_list, secon_list)
