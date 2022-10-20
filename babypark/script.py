@@ -1,11 +1,11 @@
 import json
 import time
-import schedule
+
 
 from babypark.spiders.price import main as parser
 from google_sheets.quickstart import GoogleSheet
 from b_soup.main import main as bs_parser
-from repository.ddl import add_good
+from repository.ddl import add_good, add_link, add_prices
 
 
 def worker():  # функція читання/запису парсингу цін з сайта babypark
@@ -48,14 +48,17 @@ def worker():  # функція читання/запису парсингу ц�
 def feed_goods():  # функція наповнення товарів з google sheets
     gs = GoogleSheet()
     table_value = gs.get_values()
-    print("Start reading from table")
-    counter = 0
-    for row in table_value:
-        ean_number = row[1]
-        if ean_number:
-            add_good(int(ean_number))
-            counter += 1
-    print(f'{counter} goods was added in DB')
+    add_good(table_value)
+
+
+def feed_links():  # функція наповнення посилань з google sheets
+    gs = GoogleSheet()
+    table_value = gs.get_values()
+    add_link(table_value)
+
+
+def feed_prices():  # функція наповлення цінами за допомогою парсера сайта
+    add_prices()
 
 
 def main():
@@ -65,10 +68,12 @@ def main():
     # schedule.every().day.at("20:23").do(worker)
     # schedule.every(3).hours.do(worker)
     # worker()
-    feed_goods()
+    # feed_goods()
+    # feed_links()
+    feed_prices()
 
-    while True:
-        schedule.run_pending()
+    # while True:
+    #     schedule.run_pending()
 
 
 if __name__ == '__main__':
