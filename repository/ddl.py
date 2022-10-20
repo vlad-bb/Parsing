@@ -63,21 +63,24 @@ def add_link(data: List[list]):
 
 
 def add_prices():
-    results = session.query(Good, Link).join(Link).filter(Good.id == Link.good_id).limit(5).all()
+    results = session.query(Good, Link).join(Link).filter(Good.id == Link.good_id).all()
     for good, link in results:
-        ean = good.ean
         link = link.link
-        print(link)
         response = requests.get(link)
         soup = BeautifulSoup(response.text, 'html.parser')
         content = soup.find_all('meta')
         for row in content:
             try:
                 if 'product:price:amount' == row['property']:
-                    price = row['content']
-                    print(price, type(price))
+                    price_ = float(row['content'])
+                    price = Price(price=price_,
+                                  competitor_id=1,
+                                  good_id=good.id)
+                    session.add(price)
             except KeyError:
                 continue
+    session.commit()
+    print('Prices were added')
 
 
 if __name__ == '__main__':

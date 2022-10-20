@@ -1,11 +1,12 @@
 import json
-import time
-
+from time import time
+import csv
 
 from babypark.spiders.price import main as parser
 from google_sheets.quickstart import GoogleSheet
 from b_soup.main import main as bs_parser
 from repository.ddl import add_good, add_link, add_prices
+from repository.dml import get_price_list
 
 
 def worker():  # функція читання/запису парсингу цін з сайта babypark
@@ -61,6 +62,17 @@ def feed_prices():  # функція наповлення цінами за до
     add_prices()
 
 
+def get_csv(file):  # Функція отримання csv файлу цін з БД
+    price_list = get_price_list()
+    with open(file, 'w', encoding='utf-8', newline='') as f:
+        fieldnames = ['EAN number', 'price EUR']
+        writer = csv.DictWriter(f, delimiter=',', fieldnames=fieldnames)
+        writer.writeheader()
+        for row in price_list:
+            writer.writerow(row)
+    print(f'CSV is ready, check {file}')
+
+
 def main():
     print('Worker waiting')
     # schedule.every().day.at("15:00").do(worker)
@@ -70,11 +82,14 @@ def main():
     # worker()
     # feed_goods()
     # feed_links()
-    feed_prices()
+    # feed_prices()
+    get_csv('data/babypark_price.csv')
 
     # while True:
     #     schedule.run_pending()
 
 
 if __name__ == '__main__':
+    timer = time()
     main()
+    print(f'Work time {round(time() - timer, 4)}')

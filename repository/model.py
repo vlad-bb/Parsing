@@ -49,5 +49,5 @@ class Price(Base):
     competitor = relationship('Competitor', back_populates='price')
     good = relationship('Good', back_populates='price')
 
-    def __repr__(self):
-        return f'{self.id}, {self.price}, {self.created}, {self.change}'
+    # def __repr__(self):
+    #     return f'{self.id}, {self.price}, {self.created}, {self.change}'

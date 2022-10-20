@@ -36,5 +36,14 @@ def check_unique_link(link_):
     return result
 
 
+def get_price_list():
+    price_list = []
+    results = session.query(Good, Price).join(Price).filter(Good.id == Price.good_id).all()
+    for good, price in results:
+        item = {'EAN number': good.ean, 'price EUR': price.price}
+        price_list.append(item)
+    return price_list
+
+
 if __name__ == '__main__':
     pass
