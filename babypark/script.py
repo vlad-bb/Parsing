@@ -9,7 +9,7 @@ from repository.ddl import add_good, add_link, add_prices
 from repository.dml import get_price_list
 
 
-def worker():  # функція читання/запису парсингу цін з сайта babypark
+def worker():  # функція читання/запису цін в/з google sheets
     data_list = []
     gs = GoogleSheet()
     table_value = gs.get_values()
@@ -71,6 +71,7 @@ def get_csv(file):  # Функція отримання csv файлу цін з
         for row in price_list:
             writer.writerow(row)
     print(f'CSV is ready, check {file}')
+
 
 
 def main():
