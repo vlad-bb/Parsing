@@ -26,8 +26,9 @@ def get_category_links():  # збирає посилання на усі кат�
         src = file.read()
 
     soup = BeautifulSoup(src, 'lxml')
-    links = soup.find_all('div', class_="submenu")
-    print(links)
+    links = soup.find('div', class_="submenu").find_all('a')
+    for link in links:
+        print(link)
 
 
 if __name__ == '__main__':
