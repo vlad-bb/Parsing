@@ -1,3 +1,4 @@
+import datetime
 import os
 import pickle
 import random
@@ -64,7 +65,8 @@ def get_goods_link():  # Збирає посилання на товар зі с
             counter += 1
             print(f"[INFO] Scaning page: {counter}/{total}")
             sleep(random.randrange(2, 4))
-    with open("babypark/draft/goods_urls_set.bin", "wb") as file_set:
+    cur_time = datetime.datetime.now().strftime("%d_%m_%Y_%H_%M")
+    with open(f"babypark/draft/goods_urls_set_{cur_time}.bin", "wb") as file_set:
         pickle.dump(goods_urls_set, file_set)
         print(
             f'[INFO]Goods links were collect.\nAmount {len(goods_urls_set)}.\nCheck file babypark/draft/goods_urls_set.bin')
@@ -73,5 +75,5 @@ def get_goods_link():  # Збирає посилання на товар зі с
 if __name__ == '__main__':
     timer = time()
     # get_category_links()
-    get_goods_link()
-    print(f'Work time {round(time() - timer, 4)}')
+    # get_goods_link() # Результат 4600 посилань, за 2000 секунд
+    print(f'Work time {round(time() - timer, 4)} sec')

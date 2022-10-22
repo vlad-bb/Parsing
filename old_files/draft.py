@@ -20,4 +20,4 @@ import pickle
 filename = '/Users/admin/Documents/GitHub/Parsing/babypark/draft/goods_urls_set.bin'
 with open(filename, 'rb') as file:
     urls = pickle.load(file)
-    print(len(urls))
+    print(urls)
