@@ -36,7 +36,7 @@ def add_competitor(name):  # функція додавання в БД ново�
 
 
 @ExceptError
-def add_good(data: List[list]):  # функція додавання в БД нових товарів
+def add_good(data: List[list]):  # функція додавання в БД нових товарів з GoogleSheets
     for row in data:
         ean = row[1]
         if ean:
@@ -47,7 +47,7 @@ def add_good(data: List[list]):  # функція додавання в БД н�
     print('EAN was added')
 
 
-def add_link(data: List[list]):
+def add_link(data: List[list]): # функція додавання в БД посілань та товар з GoogleSheets
     for row in data:
         link = row[5]
         ean_number = row[1]
@@ -62,7 +62,7 @@ def add_link(data: List[list]):
     print('Links were added')
 
 
-def add_prices():
+def add_prices(): # функція додавання ціни в БД на основі даних з БД та парсингу
     results = session.query(Good, Link).join(Link).filter(Good.id == Link.good_id).all()
     for good, link in results:
         link = link.link

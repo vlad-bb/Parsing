@@ -10,8 +10,14 @@
 #
 # print(first_list, secon_list)
 
-num = int(input("Enter an integer number: "))
+# num = int(input("Enter an integer number: "))
+#
+# # is_even = True if num%2 == 0 else False
+# is_even = (True, False)[num%2]
+# print(is_even)
+import pickle
 
-# is_even = True if num%2 == 0 else False
-is_even = (True, False)[num%2]
-print(is_even)
+filename = '/Users/admin/Documents/GitHub/Parsing/babypark/draft/goods_urls_set.bin'
+with open(filename, 'rb') as file:
+    urls = pickle.load(file)
+    print(len(urls))
