@@ -47,7 +47,7 @@ def add_good(data: List[list]):  # функція додавання в БД н�
     print('EAN was added')
 
 
-def add_link(data: List[list]): # функція додавання в БД посілань та товар з GoogleSheets
+def add_link(data: List[list]):  # функція додавання в БД посілань та товар з GoogleSheets
     for row in data:
         link = row[5]
         ean_number = row[1]
@@ -62,7 +62,7 @@ def add_link(data: List[list]): # функція додавання в БД по
     print('Links were added')
 
 
-def add_prices(): # функція додавання ціни в БД на основі даних з БД та парсингу
+def add_prices():  # функція додавання ціни в БД на основі даних з БД та парсингу
     results = session.query(Good, Link).join(Link).filter(Good.id == Link.good_id).all()
     for good, link in results:
         link = link.link
@@ -81,6 +81,36 @@ def add_prices(): # функція додавання ціни в БД на ос
                 continue
     session.commit()
     print('Prices were added')
+
+
+def add_good_baby(ean, title):
+    if not check_unique_ean(ean):
+        good = Good(ean=ean, title=title)
+        session.add(good)
+        session.commit()
+        print('[INFO]Good was added')
+
+
+def add_link_baby(url, ean_number):
+    if not check_unique_link(url):
+        good_id = session.query(Good.id).filter(Good.ean == ean_number).first()
+        link = Link(link=url,
+                    competitor_id=1,
+                    good_id=good_id[0])
+        session.add(link)
+        session.commit()
+        print('[INFO]Link was added')
+
+
+def add_price_baby(price_, ean):
+    good_id = session.query(Good.id).filter(Good.ean == ean).first()
+    print(good_id)
+    price = Price(price=price_,
+                  competitor_id=1,
+                  good_id=good_id[0])
+    session.add(price)
+    session.commit()
+    print('[INFO]Price was added')
 
 
 if __name__ == '__main__':

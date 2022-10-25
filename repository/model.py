@@ -9,7 +9,7 @@ from repository.db import Base
 class Competitor(Base):
     __tablename__ = 'competitors'
     id = Column(Integer, primary_key=True)
-    name = Column(String(120), nullable=False)
+    name = Column(String(200), nullable=False)
     link = relationship('Link', back_populates='competitor')
     price = relationship('Price', back_populates='competitor')
 
@@ -17,7 +17,8 @@ class Competitor(Base):
 class Good(Base):
     __tablename__ = 'goods'
     id = Column(Integer, primary_key=True)
-    ean = Column(BigInteger, unique=True, nullable=False)
+    ean = Column(String(20), unique=True, nullable=False)
+    title = Column(String(200), nullable=False)
     link = relationship('Link', back_populates='good')
     price = relationship('Price', back_populates='good')
 
@@ -28,7 +29,7 @@ class Good(Base):
 class Link(Base):
     __tablename__ = 'links'
     id = Column(Integer, primary_key=True)
-    link = Column(String(120), unique=True, nullable=False)
+    link = Column(String(200), unique=True, nullable=False)
     competitor_id = Column('competitor_id', ForeignKey('competitors.id', ondelete='CASCADE'), nullable=False)
     good_id = Column('good_id', ForeignKey('goods.id', ondelete='CASCADE'), nullable=False)
     competitor = relationship('Competitor', back_populates='link')

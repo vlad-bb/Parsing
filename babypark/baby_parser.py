@@ -2,12 +2,13 @@ import datetime
 import os
 import pickle
 import random
+import re
 from time import sleep, time
 from bs4 import BeautifulSoup
 import requests
 import json
 import csv
-from repository.ddl import add_good, add_link, add_prices
+from repository.ddl import add_good, add_link, add_prices, add_good_baby, add_link_baby, add_price_baby
 from repository.dml import get_price_list
 
 """ Парсер для роботи з сайтом babypark """
@@ -15,9 +16,10 @@ from repository.dml import get_price_list
 HEADERS = {
     "user-agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36"
 }
+cur_time = datetime.datetime.now().strftime("%d_%m_%Y_%H_%M")
 
 
-def get_category_links():  # збирає посилання на усі категорії з сайту
+def get_category_links():  # збирає посилання на усіх категорії сайту
     response = requests.get('https://www.babypark.de/overig', headers=HEADERS).text
     # if not os.path.exists("babypark/draft"):
     #     os.mkdir("babypark/draft")
@@ -65,15 +67,65 @@ def get_goods_link():  # Збирає посилання на товар зі с
             counter += 1
             print(f"[INFO] Scaning page: {counter}/{total}")
             sleep(random.randrange(2, 4))
-    cur_time = datetime.datetime.now().strftime("%d_%m_%Y_%H_%M")
+
     with open(f"babypark/draft/goods_urls_set_{cur_time}.bin", "wb") as file_set:
         pickle.dump(goods_urls_set, file_set)
         print(
-            f'[INFO]Goods links were collect.\nAmount {len(goods_urls_set)}.\nCheck file babypark/draft/goods_urls_set.bin')
+            f'[INFO]Goods links were collect.\nAmount {len(goods_urls_set)}.\nCheck file babypark/draft/goods_urls_set_{cur_time}.bin')
+
+
+def feed_data(filename):
+    with open(filename, 'rb') as file:
+        goods_urls_set = pickle.load(file)
+    # limit = 100
+    total = len(goods_urls_set)
+    counter = 0
+    problem_links = []
+    for url in goods_urls_set:
+        # limit -= 1
+        # if limit == 0:
+        #     break
+        # print(url)
+        # print(f'[INFO] Parsing link {limit}')
+        response = requests.get(url, headers=HEADERS).text
+        # with open(f"babypark/draft/good_{limit}.html", "w") as fh:
+        #     fh.write(response)
+        # with open(f"babypark/draft/good_{limit}.html") as fh:
+        #     response = fh.read()
+        soup = BeautifulSoup(response, 'lxml')
+        counter += 1
+        print(f"[INFO] Scaning page: {counter}/{total}")
+        try:
+            tables = soup.find('table', class_='data table additional-attributes').find_all('td', class_="col data")
+            title_ = soup.title.text.split('|')
+            content = soup.find_all('meta')
+            for table in tables:
+                ean = table.text.strip()
+                if ean.isdigit() and len(ean) == 13:
+                    title = title_[0].strip()
+                    add_good_baby(ean, title)
+                    sleep(random.randrange(1, 2))
+                    add_link_baby(url, ean)
+                    for row in content:
+                        try:
+                            if 'product:price:amount' == row['property']:
+                                price_ = float(row['content'])
+                                add_price_baby(price_, ean)
+                        except KeyError:
+                            continue
+        except Exception as err:
+            print(err)
+            problem_links.append(url)
+            continue
+    if len(problem_links) > 0:
+        with open(f'babypark/draft/problem_links_{cur_time}.json', 'a') as jf:
+            json.dump(problem_links, jf, indent=4)
 
 
 if __name__ == '__main__':
     timer = time()
     # get_category_links()
     # get_goods_link() # Результат 4600 посилань, за 2000 секунд
+    feed_data('babypark/draft/goods_urls_set.bin')
+
     print(f'Work time {round(time() - timer, 4)} sec')
