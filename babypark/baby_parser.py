@@ -74,17 +74,17 @@ def get_goods_link():  # Збирає посилання на товар зі с
             f'[INFO]Goods links were collect.\nAmount {len(goods_urls_set)}.\nCheck file babypark/draft/goods_urls_set_{cur_time}.bin')
 
 
-def feed_data(filename):
+def feed_data(filename):  # парсить сайт за допомогою лінків, за записує в БД інформацію про товар, лінк, та ціну
     with open(filename, 'rb') as file:
         goods_urls_set = pickle.load(file)
-    # limit = 100
+    limit = 20
     total = len(goods_urls_set)
     counter = 0
     problem_links = []
     for url in goods_urls_set:
-        # limit -= 1
-        # if limit == 0:
-        #     break
+        limit -= 1
+        if limit == 0:
+            break
         # print(url)
         # print(f'[INFO] Parsing link {limit}')
         response = requests.get(url, headers=HEADERS).text
@@ -117,15 +117,28 @@ def feed_data(filename):
             print(err)
             problem_links.append(url)
             continue
-    if len(problem_links) > 0:
-        with open(f'babypark/draft/problem_links_{cur_time}.json', 'a') as jf:
-            json.dump(problem_links, jf, indent=4)
+    # if len(problem_links) > 0:
+    #     with open(f'babypark/draft/problem_links_{cur_time}.json', 'a') as jf:
+    #         json.dump(problem_links, jf, indent=4)
+
+
+def get_csv():  # Функція отримання csv файлу цін з БД
+    price_list = get_price_list()
+    total = len(price_list)
+    with open(f'data/price_list_{cur_time}.csv', 'w', encoding='utf-8', newline='') as file:
+        fieldnames = ['Title', 'EAN number', 'price EUR']
+        writer = csv.DictWriter(file, delimiter=',', fieldnames=fieldnames)
+        writer.writeheader()
+        for row in price_list:
+            writer.writerow(row)
+    print(f'[INFO] CSV was created. Items {total} in table.')
 
 
 if __name__ == '__main__':
     timer = time()
     # get_category_links()
     # get_goods_link() # Результат 4600 посилань, за 2000 секунд
-    feed_data('babypark/draft/goods_urls_set.bin')
+    # feed_data('babypark/draft/goods_urls_set.bin')
+    # get_csv()
 
     print(f'Work time {round(time() - timer, 4)} sec')

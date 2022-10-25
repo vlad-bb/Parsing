@@ -3,6 +3,7 @@
 """
 
 import sqlalchemy
+from sqlalchemy import and_
 
 from repository.db import session
 from repository.model import Competitor, Good, Link, Price
@@ -38,12 +39,13 @@ def check_unique_link(link_):
 
 def get_price_list():
     price_list = []
-    results = session.query(Good, Price).join(Price).filter(Good.id == Price.good_id).all()
+    results = session.query(Good, Price).join(Price).filter(Good.id == Price.good_id).order_by(
+        Price.good_id).distinct(Price.good_id).all()
     for good, price in results:
-        item = {'EAN number': good.ean, 'price EUR': price.price}
+        item = {'Title': good.title, 'EAN number': good.ean, 'price EUR': price.price}
         price_list.append(item)
     return price_list
 
 
 if __name__ == '__main__':
-    pass
+    get_price_list()
