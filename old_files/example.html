@@ -1,0 +1,2895 @@
+<!-- APPLICATION LAYOUT -->
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns:og="http://ogp.me/ns#" lang="en-CA">
+<head>
+  <!-- Data Layer -->
+<script>
+  window.dataLayer = window.dataLayer || [{"bc.siteId":"ONT-OTTAWA_BRANCH","bc.libraryId":26,"bc.localBranch":null,"bc.shortName":"OPL","bc.longName":"Ottawa Public Library","bc.domain":"ottawa","bc.externalGaId":"UA-1099672-12","bc.externalCoreGAId":"UA-1099672-12","bc.gaCrossDomainNames":[],"bc.gaCrossDomainEnabled":false,"bc.cmsEnabled":false,"bc.cmsUrl":"http://bibliocms.com/","bc.crazyEggId":"00178067","bc.allowGoogleAdFeatures":false,"bc.externalEventsGAId":null,"bc.product":"core","bc.branch":null,"bc.version":"Version 9.10.0 Last updated 2022/10/24 10:58 [cor-liv-app03]"}];
+</script>
+<!-- end Data Layer -->
+<!-- Start Google Tag Manager-->
+<script>(function(w,d,s,l,i)
+{
+  w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+  
+  var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+  
+  j.async=true;
+  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';
+  f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer', 'GTM-TDPBXX');</script> 
+<!-- End Google Tag Manager -->
+
+<!-- Google Analytics (analytics.js) -->
+<script>
+  if (!window.ga) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  }
+
+  window.BCGoogleAnalytics={_initialized:!1,config:{},default_tracker:null,init:function(a){if(this._initialized)throw new Error("BCGoogleAnalytics has already been initialized.");if(this.config=a||{},this.config.core&&this.config.core.trackingId){var i=this.config.core.name?this.config.core.name+".set":"set";ga("create",this.config.core),ga(i,"language",this.config.core.language),ga(i,"transport","beacon"),this.config.library&&!this.config.library.allowAdFeatures&&ga(i,"allowAdFeatures",!1)}if(this.config.library&&this.config.library.trackingId){var e=this.config.library.name+".set";ga("create",this.config.library),ga(e,"language",this.config.library.language),ga(e,"transport","beacon"),this.config.library.allowAdFeatures||ga(e,"allowAdFeatures",!1)}ga(function(a){BCGoogleAnalytics.default_tracker=a}),this._initialized=!0},getCoreTracker:function(){if(ga.getByName){var a=this.config.core||{};return a.name?ga.getByName(a.name):this.default_tracker}return null},getLibraryTracker:function(){var a=this.config.library||{};return ga.getByName&&a.name?ga.getByName(a.name):null},send:function(){var a=[].slice.call(arguments);a.unshift(!1),BCGoogleAnalytics._send.apply(this,a)},sendAll:function(){var a=[].slice.call(arguments);a.unshift(!0),BCGoogleAnalytics._send.apply(this,a)},_send:function(){var a=[].slice.call(arguments),i=a.shift();ga(function(){var e=[];BCGoogleAnalytics.getCoreTracker()&&e.push(BCGoogleAnalytics.getCoreTracker()),i&&BCGoogleAnalytics.getLibraryTracker()&&e.push(BCGoogleAnalytics.getLibraryTracker()),e.forEach(function(i){i.send.apply(i,a)})})}};
+  function push_gtm_events(a){window.dataLayer&&a.events&&a.events.length&&a.events.forEach(function(a){for(var e=["gtmCategory","gtmAction","gtmLabel","gtmValue"],t=0;t<e.length;t++)a.payload.hasOwnProperty(e[t])||(a.payload[e[t]]=void 0);window.dataLayer.push({event:a.event,payload:a.payload})})}
+
+
+  var core_ga_config = {"language":"en-ca","trackingId":"UA-12552489-1","cookieDomain":"auto","cookieFlags":"SameSite=None; Secure"}
+
+// Start OPL Google Analytics property, library-managed account 
+  var library_ga_config = null, ga_autolink_domains = null;
+    library_ga_config = {"name":"b","language":"en-ca","trackingId":"UA-1099672-12","cookieDomain":"auto","cookieFlags":"SameSite=None; Secure"}
+
+
+// End OPL Google Analytics property, library-managed account 
+
+
+  BCGoogleAnalytics.init({ core:core_ga_config, library:library_ga_config });
+
+    if (ga_autolink_domains && ga_autolink_domains.length) {
+      ga(library_ga_config.name + '.require', 'linker');
+      ga(library_ga_config.name + '.linker:autoLink', ga_autolink_domains, false, true);
+    }
+
+    BCGoogleAnalytics.sendAll('pageview');
+    push_gtm_events({'events': [{ 'event': 'bc.pageView', 'payload': {} }] });
+</script>
+<!-- End Google Analytics -->
+
+
+
+<!-- NEW RELIC -->
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Library",
+    "url": "https://ottawa.bibliocommons.com/",
+    "name": "Ottawa Public Library",
+    "logo": "https://cor-liv-cdn-static.bibliocommons.com/images/ONT-OTTAWA_BRANCH/logo.png?1666801531337",
+    "image": "https://cor-liv-cdn-static.bibliocommons.com/images/ONT-OTTAWA_BRANCH/logo.png?1666801531337"
+  }
+</script>
+
+<script type="text/javascript" charset="utf-8">
+  var registered_messages = [];
+  var controller_js = '//cor-cdn-static.bibliocommons.com/assets/controllers/bestsellers-48b6f8b5c36683a66cb0f0204ecdcc27.js';
+</script>
+
+<script type="text/javascript">
+  document.write("<style type=\"text/css\">.hide_on_script{display:none;}</style>");
+    var event_query = ""
+</script>
+
+
+
+<title data-analytics="bestsellers">New York Times | Ottawa Public Library | BiblioCommons</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="App-Version" content="Version 9.10.0 Last updated 2022/10/24 10:58 [cor-liv-app03]">
+<meta name="format-detection" content="telephone=no">
+
+  <meta name="google-site-verification" content="XP15EF9-Mx4nKTFwmhzJkL6q7mc-CuNVTmbkg8MnZRU" />
+
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="3ALc9x9DQbclNdsga3zMB/gEAcMHdZoqxfrcuOGLm0c=" name="csrf-token" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:site_name" content="Ottawa Public Library">
+<meta property="og:url" content="https://ottawa.bibliocommons.com/explore/bestsellers/5925_new_york_times">
+<meta property="fb:app_id" content="821053187955346">
+
+  <meta name="twitter:site" content="@opl_bpo">
+  <meta name="twitter:creator" content="@opl_bpo">
+
+  <meta property="title" content="New York Times | Ottawa Public Library | BiblioCommons">
+  <meta property="og:title" content="New York Times | Ottawa Public Library | BiblioCommons">
+  <meta name="twitter:title" content="New York Times | Ottawa Public Library | BiblioCommons">
+
+
+  <meta name="description" content="Explore Ottawa Public Library. New titles, recently rated, and recently tagged by the library community.">
+  <meta name="og:description" content="Explore Ottawa Public Library. New titles, recently rated, and recently tagged by the library community.">
+  <meta name="twitter:description" content="Explore Ottawa Public Library. New titles, recently rated, and recently tagged by the library community.">
+
+  <meta name="twitter:card" content="summary">
+
+
+
+
+  <link href="//cor-cdn-static.bibliocommons.com/assets/bc_base-7458b34fb4de9be11818e405e123b860.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="//cor-cdn-static.bibliocommons.com/assets/core-7d64d4c928373d7aa8d477bce16543c5.css" media="screen" rel="stylesheet" type="text/css" />
+  
+  
+
+  <link href="//cor-cdn-static.bibliocommons.com/assets/controllers/bestsellers-114b942a5232c868d77157f57fc2313c.css" media="screen" rel="stylesheet" type="text/css" />
+  
+  <link href="//cor-liv-cdn-static.bibliocommons.com/dynamic_stylesheet/ONT-OTTAWA_BRANCH/library_branding.css?1666801531337" media="all" rel="stylesheet" type="text/css" />
+  <link href="//cor-liv-cdn-static.bibliocommons.com/dynamic_stylesheet/ONT-OTTAWA_BRANCH/stylesheet.css?1666801531337" media="all" rel="stylesheet" type="text/css" />
+
+  <!--[if lt IE 9]><link href="//cor-cdn-static.bibliocommons.com/assets/deprecated/context/core/IE-223cce97d2a1ab4365e01eb4070abbb7.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+  <!--[if IE 8]><link href="//cor-cdn-static.bibliocommons.com/assets/deprecated/context/core/IE8-6423c920b2af42d04525fdd61d76a9ee.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+  <!--[if IE 9]><link href="//cor-cdn-static.bibliocommons.com/assets/deprecated/context/core/ie9-f9eebad232c8e6d89bc517dc1c34ab40.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+
+
+<script type="text/javascript" charset="utf-8">
+  var registered_messages = [];
+</script>
+
+  <script type="text/javascript">
+    
+var AUTH_TOKEN = "3ALc9x9DQbclNdsga3zMB/gEAcMHdZoqxfrcuOGLm0c=";
+var BC_USER_ID = 0;
+var BC_LIBRARY_ID = 26;
+var BC_USERNAME = "";
+var BC_MD5_USER = "";
+var at_local_branch = "";
+var USER_PRESENT = "false";
+var current_time = "Wed, 26 Oct 2022 16:33:49 GMT";
+var j_callback = "";
+var SEND_FORMS = true;
+var CURRENT_LOCALE = "en-CA";
+
+var back_to_link_page_id = "bestsellers";
+
+
+var AUTH_RULES = {
+  is_program_agency: false,
+  recently_returned_enabled: true,
+  registration_requires_user_segments: false,
+  digital_service_enabled: true,
+  show_barcodeless_if_login_fail: false,
+  reminder_messaging_enabled: false,
+  numeric_password_required: false,
+  confirm_password: true,
+  supported_registration_types: ["ILS_BACKED"],
+  required_fields: ["barcode", "user_pin", "first_name", "last_name", "location_city", "location_name", "user_name", "password", "confirm_password", "accept_terms", "user_zip_code", "user_grade"],
+  reminder_types: [],
+  default_page: 'dashboard',
+  restricted_age_limit: 13,
+  password_min_length: 4,
+  password_max_length: 16,
+  pre_registration_account_linking: false,
+  pre_registration_matching: false,
+  restrict_free_text_entry: false
+};
+
+var READING_TIME_LAST_NUDGE = false;
+
+var USER_HAS_NEW_BADGES = false;
+var DOE_LOGIN_REDIRECT = false;
+
+
+
+
+/* Localization */
+var less = "Show less";
+var more = "Show more";
+var sSearch =  "Search entries:";
+var sLengthMenu = "Display _MENU_ records per page";
+var sZeroRecords =  "Nothing found";
+var sInfo = "Showing _START_ to _END_ of _TOTAL_ records";
+var sInfoEmpty = "Showing 0 to 0 of 0 records";
+var sInfoFiltered = "(filtered from _MAX_ total records)";
+var sNext = "Next";
+var sPrevious = "Previous";
+var od_localizations = {
+    fetch_message: "Checking Availability...",
+    wait_message: "Please wait, other requests are pending.",
+    request_available: "Check availability",
+    digital_request: "Place hold",
+    checkout: "Available for checkout"
+}
+var DISABLE_MSG = "If you edit the query directly, the form below will be disabled.";
+var ADDED = '<i aria-hidden="true" class=" icon-ok"></i> Added to...';
+var CLOSETEXT = "Close";
+var START_DATE = "Pick a start date.";
+var DONE_BUTTON =  "Done";
+var END_DATE = "Suspend End Date";
+var START_DATE = "Suspend Start Date";
+var YOUR_USERNAME_IS = "Your username is:";
+var localized_validator_messages = {
+  accept_terms: {
+    required: "You must accept the terms."
+  }
+  , user_name:{
+    remote:  "Someone already has that username",
+    matchesPattern: "Your username can contain only letters, numbers, or underscores (no spaces). It cannot contain numbers only."
+  }
+  , validExactPwd: "Your password must be {0} characters in length"
+  , validExactPin: "Your PIN must be {0} numeric digits"
+  , required: "This field is required."
+  , remote: "Please fix this field."
+  , email: "Please enter a valid email address."
+  , multiemail: "Please enter valid email address(es)."
+  , url: "Please enter a valid URL."
+  , date: "Please enter a valid date."
+  , dateISO: "Please enter a valid date (ISO)."
+  , number: "Please enter a valid number."
+  , digits: "Please enter only digits."
+  , creditcard: "Please enter a valid credit card number."
+  , equalTo: "Please enter the same value again."
+  , accept: "Please enter a value with a valid extension."
+  , maxlength: "Please enter no more than {0} characters."
+  , minlength: "Please enter at least {0} characters."
+  , rangelength: "Please enter a value between {0} and {1} characters long."
+  , range: "Please enter a value between {0} and {1}."
+  , max: "Please enter a value less than or equal to {0}."
+  , min: "Please enter a value greater than or equal to {0}."
+  , filteredPhone: "Please enter a valid 10-digit North American phone number."
+  , s4pYearRange: "Please enter a 4-digit year from 1901 to {0}"
+  , reportDateRange: "This date is outside the maximum range of 3 months."
+  , badgesAgeRange: "Minimum age cannot be more than max age."
+  , badgesCode: "Text, numbers, underscores and hashtags only please. Code must have at least 2 characters."
+  , twitterusername: "Twitter username cannot contain spaces or symbols."
+  , suggested_purchases_select_reason: "Please select a reason."
+};
+
+var BCLang = {
+  more: "More",
+  like: "Like",
+  likes: "likes",
+  liked: "Liked",
+  unlike: "Unlike",
+  unliked: "unliked",
+  list: "List",
+  lists: "Lists",
+  title: "Title",
+  titles: "Titles",
+  library: "library",
+  libraries: "libraries",
+  person: "person",
+  people: "people",
+  show_more: "Show More",
+  loading: "Loading...",
+  buttons: {
+    save: "Save",
+    cancel: "Cancel"
+  },
+  errors_and_messages: {
+    errors: "An error occurred and your request could not be completed. Please try again later",
+    preferred_location_selected: "This location has been selected.",
+    covers_copied: "Jacket cover images copied to clipboard."
+  },
+  user_profile: {
+    duplicate_label: "You have entered a duplicate label",
+    user_added: "User added"
+  },
+  color: "colour",
+  animal: "animal",
+  reg_color_picked: "picked colour",
+  reg_animal_picked: "picked animal",
+  reg_confirm_tos: "Confirm your acceptance of the terms and conditions",
+  something_went_wrong: "Something went wrong, please try later.",
+  help_bubble: {
+    borrowing_select_items: {
+      text: "Switch to manage multiple items from here...",
+      title: "You will be able to select and manage items of all status types."
+    },
+    borrowing_summary: {
+      title: "Your borrowing summary menu can be accessed from here"
+    },
+    checkedout_ratings: {
+      text: "Titles you rate are automatically added to your Completed Shelf, and default to the privacy setting of your shelf.<br><a data-js=\"help_popout\" href=\"https://help.bibliocommons.com/045faq/040faq-my-shelves\">Learn more<\/a>",
+      title: "Rate or add titles to your Shelves"
+    },
+    borrowing_summary_view: {
+      text: "Your items are grouped by status when 2 or more status types exist. You can manage your items in groups, or...",
+      title: "This is your summary view"
+    },
+    holds_shelves: {
+      text: "Shelves allow you to keep a reference to the items you have borrowed or wish to borrow. You can add and move items to your For Later, In Progress, or Completed Shelf, and you can keep them private or public.<br><a data-js=\"help_popout\" href=\"https://help.bibliocommons.com/045faq/040faq-my-shelves\">Learn more<\/a>",
+      title: "Add items to your Shelves"
+    },
+    borrowing_faqs: {
+      text: "You can access the FAQs or take this tour from here."
+    },
+    next_text: "OK, Next",
+    close_text: "OK, Got it.",
+    borrowing_batch_actions: {
+      title: "Select the items you want to manage, and then choose the action you want to take from here"
+    },
+    borrowing_individual_actions: {
+      title: "Access individual item actions from here"
+    }
+  }
+};
+
+var HELP_BUBBLES = {};
+
+var bc_feature = {};
+bc_feature['CirculationPopularity'] = true;
+bc_feature['RecentCommentsCarousel'] = false;
+bc_feature['ReaderAssetBuild'] = false;
+bc_feature['ReaderConsolidatedMenu'] = false;
+bc_feature['ReaderEcwImageFix'] = false;
+bc_feature['ReaderForceDownload'] = false;
+bc_feature['ReaderForceDownloadReadPage'] = false;
+bc_feature['ReaderNativeLogout'] = false;
+bc_feature['ReaderStartupScreen'] = false;
+bc_feature['ReaderSafariHomescreen'] = false;
+bc_feature['ResponsiveShelves'] = false;
+bc_feature['ResponsiveShelvesOptIn'] = false;
+bc_feature['RevisedFrbrRatingFacet'] = false;
+bc_feature['MyConversations'] = false;
+bc_feature['UseAcquisitionCoreStub'] = false;
+bc_feature['RemoveFooterPartials'] = false;
+bc_feature['LikingLibraryBreakdown'] = false;
+bc_feature['ShowOclcIds'] = false;
+bc_feature['SaveUserInfoForReporting'] = false;
+bc_feature['BootstrapPopovers'] = false;
+bc_feature['CheckedOutOUTStatus'] = true;
+bc_feature['EHoldingsStatus'] = false;
+bc_feature['BorrowingWidgetCaching'] = false;
+bc_feature['WrapLegacyWithBootstrap'] = true;
+bc_feature['NerfListCarousel'] = true;
+bc_feature['ItemFormatPicker'] = true;
+bc_feature['NerfShelves'] = true;
+bc_feature['NerfShelvesOptIn'] = true;
+bc_feature['NerfBorrowing'] = true;
+bc_feature['NerfBorrowingOptIn'] = true;
+bc_feature['HoldsWhileYouWaitRecommendations'] = false;
+bc_feature['BatchAddToShelf'] = false;
+bc_feature['ReactPrivacyToggle'] = false;
+bc_feature['ReactCommentEditor'] = false;
+bc_feature['ReactSummaryEditor'] = false;
+bc_feature['ReactQuotationEditor'] = false;
+bc_feature['ReactContentAdvisoryEditor'] = false;
+bc_feature['SecurityDarkRelease'] = false;
+bc_feature['ReactAgeSuitibilityEditor'] = false;
+bc_feature['CopyListCoversButton'] = true;
+bc_feature['ThreeWayAccountLinking'] = false;
+bc_feature['SearchBoosting'] = false;
+
+var THIRD_PARTY_RECOMMENDATIONS = {};
+  THIRD_PARTY_RECOMMENDATIONS['novelist'] = {"apikey":"s4274509.main.novselcsc:dGJyMOPY8Umvq7YA","maxitems":5,"maxisbns":5};
+
+var is_responsive_registration = true;
+
+var frbr_enabled = false
+
+    
+  if (typeof console == "undefined" || typeof console.debug == "undefined") var console = { log: function() {}, warn: function() {}, info: function() {}, error: function() {}  }; 
+    console.debug = function() {};
+      
+  document.write("<style type=\"text/css\">.hide_on_script{display:none;}</style>");
+
+  var auto_suggest_enabled = true;
+  var open_dropdown = "";
+  var open_popup = "";
+  var open_editor = "";
+  var open_details = "";
+  var selected_items = [];
+  var open_tip = "";
+  var help_win = false;
+
+  var fines_popup_width = 750;
+  var fines_popup_height = 600;
+
+  var renew_enabled = true;
+  var registrar = {
+    hooks: {},
+    handlers: {},
+    remove_hook: function(type){
+      this.hooks[type] = [];
+    },
+    add_hook: function(type, o) {
+      if (typeof(o) == "string") o = {element: o};
+      if (this.hooks[type] == undefined) {
+       this.hooks[type] = [];
+      }
+      this.hooks[type].push(o);
+      if (this.handlers[type] != undefined) {
+       for (var i=0; i < this.handlers[type].length; i++) {
+         this.inform_handler(this.handlers[type][i], o);
+       };
+      }
+    },
+    add_handler: function(types, handler, opts) {
+      if (typeof(types) != "object") {
+       types = [types];
+      }
+      
+      if (opts == undefined) {
+       opts = {delay: 0};
+      }
+           
+      for (var i=0; i < types.length; i++) {
+       var type = types[i];
+       if (this.handlers[type] == undefined) {
+         this.handlers[type] = [];
+       }
+       var h = {handler: handler, opts: opts};
+       this.handlers[type].push(h);
+       if (this.hooks[type] != undefined) {
+         var hook_length = this.hooks[type].length;
+         if (hook_length > 0) {
+          if (h.opts.delay != 0) {
+            this.chained_inform_handler(0, h, type);
+          } else {
+            for (var i=0; i < this.hooks[type].length; i++) {
+             this.inform_handler(h, this.hooks[type][i]);
+            }
+          }
+         }
+       }
+      };
+    },
+    chained_inform_handler: function(idx, h, type) {
+      if (idx < this.hooks[type].length) {
+        registrar.inform_handler(h, this.hooks[type][idx]);
+        setTimeout(function() { registrar.chained_inform_handler(idx+1, h, type); }, h.opts.delay);
+      }
+    },
+    inform_handler: function(h, hook) {
+      h.handler(hook);
+    }
+  };
+  
+  registrar.add_handler("dropdown", function(o) {
+    var hover = false;
+    if (o.hover != undefined && o.hover != null) hover = o.hover;
+    if (!o.hover && o.trigger) document.getElementById(o.trigger).onclick = function(){return false;};
+  });
+  
+     var DOAUTH = true;
+   
+  HAS_SCHOOLS = false
+
+var CHECK_FOR_BADGES = false;
+
+
+var CMS_ENABLED = false;
+var CMS_URL = "";
+
+var images_path_location = /assets/;
+
+  </script>
+
+<script type="text/javascript">
+  if (typeof console == "undefined" || typeof console.debug == "undefined") var console = { log: function() {}, warn: function() {}, info: function() {}, error: function() {} };
+  console.debug = function() {};
+</script>
+
+<script type="text/javascript">
+    var messages = [];
+</script>
+
+<link href="//cor-cdn-static.bibliocommons.com/assets/print-fb42783833d8fede559cd8b19f911dd8.css" media="print" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<link rel="shortcut icon" href="/favicon.ico"/>
+
+</head>
+
+<body id="context_core" class='lt_responsive sidebar_and_content '>
+
+<div class="screen_reader_navigation" role="navigation">
+  
+  <a class="hidden-xs hidden-sm screen_reader_nav" href="#header_main_nav" data-js="skip_to_main_nav">
+    Skip to main navigation
+  </a>
+  <a class="hidden-lg hidden-md screen_reader_nav" href="#header_main_nav" data-js="header_nav_xs_trigger" data-target = "header-main-nav">
+    Skip to main navigation
+  </a>
+    <a class="hidden-xs hidden-sm screen_reader_nav" href="#desktop_search_form" data-js="skip_to_search_field">
+      Skip to search
+    </a>
+  <a class="hidden-lg hidden-md screen_reader_nav" href="#mobile_search_form" data-js="header_search_xs_trigger">
+    Skip to search
+  </a>
+
+  <a class="screen_reader_nav" href="#content-start" data-js="skip_to_content_start">
+    Skip to content
+  </a>
+</div>
+<div id="ct_bestsellers" data-test-id="bestsellers_page" class="view_medium">
+
+      
+    
+<script type="text/javascript">
+  window.BCHeaderConfig = {"is_externally_rendered":false,"initial_state":{},"core_base_url":"https://ottawa.bibliocommons.com/","web_base_url":null,"domain":"ottawa","messages":{"ada_suggestions_below":"Suggestions below."},"analytics":{"auto_suggest_category":"v2-search-autosuggest","auto_suggest_click_event":"bc.searchAutoSuggestClick","link_click_action":"v2-link-click"}};
+</script>
+
+
+<div class="cp_header_wrapper">
+  <div class="cp_header" data-js="cp_header" testid="header" data-responsive="true">
+
+    <div class="cp_header_biblio_bar">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-xs-12">
+          <div class="pull-left">
+            <div class="hidden-xs">
+  <a href="javascript:void(0);" aria-expanded="false" class="biblio_bar_link language_dropdown_trigger dropdown-toggle hide_trigger_icon" data-toggle="dropdown" id="biblio_language_trigger" lang="en-CA" testid="selected_language">
+    <svg aria-hidden="true" class="svg_icon " focusable="false" height="12" viewBox="0 0 12 12" width="12" xmlns="http://www.w3.org/2000/svg">
+  <path d="M5.994 0C2.682 0 0 2.688 0 6C0 9.312 2.682 12 5.994 12C9.312 12 12 9.312 12 6C12 2.688 9.312 0 5.994 0ZM10.152 3.6H8.382C8.19 2.85 7.914 2.13 7.554 1.464C8.658 1.842 9.576 2.61 10.152 3.6ZM6 1.224C6.498 1.944 6.888 2.742 7.146 3.6H4.854C5.112 2.742 5.502 1.944 6 1.224ZM1.356 7.2C1.26 6.816 1.2 6.414 1.2 6C1.2 5.586 1.26 5.184 1.356 4.8H3.384C3.336 5.196 3.3 5.592 3.3 6C3.3 6.408 3.336 6.804 3.384 7.2H1.356ZM1.848 8.4H3.618C3.81 9.15 4.086 9.87 4.446 10.536C3.342 10.158 2.424 9.396 1.848 8.4ZM3.618 3.6H1.848C2.424 2.604 3.342 1.842 4.446 1.464C4.086 2.13 3.81 2.85 3.618 3.6ZM6 10.776C5.502 10.056 5.112 9.258 4.854 8.4H7.146C6.888 9.258 6.498 10.056 6 10.776ZM7.404 7.2H4.596C4.542 6.804 4.5 6.408 4.5 6C4.5 5.592 4.542 5.19 4.596 4.8H7.404C7.458 5.19 7.5 5.592 7.5 6C7.5 6.408 7.458 6.804 7.404 7.2ZM7.554 10.536C7.914 9.87 8.19 9.15 8.382 8.4H10.152C9.576 9.39 8.658 10.158 7.554 10.536ZM8.616 7.2C8.664 6.804 8.7 6.408 8.7 6C8.7 5.592 8.664 5.196 8.616 4.8H10.644C10.74 5.184 10.8 5.586 10.8 6C10.8 6.414 10.74 6.816 10.644 7.2H8.616Z" />
+</svg>
+<span aria-hidden="true">English</span><span class="sr-only" data-js="sr-only-dropdown-toggle" data-text-collapsed="English, collapsed" data-text-expanded="English, expanded">English, collapsed</span><span aria-hidden="true" class="icon-arrow"></span></a>  <ul class="dropdown-menu biblio_languages"
+      aria-labelledby="biblio_language_trigger"
+      testid="list_of_langs">
+      <li><a href="/info/switch_language?external=false&amp;selected_language=fr-CA" class="" lang="fr-CA">Français </a></li>
+  </ul>
+</div>
+
+<a href="#language-switcher-overlay"
+   class="biblio_bar_link visible-xs language_overlay_trigger"
+   data-js="language_overlay_trigger"
+   data-target="language_switcher_overlay"
+   testid="language_trigger">
+  <svg aria-hidden="true" class="svg_icon " focusable="false" height="12" viewBox="0 0 12 12" width="12" xmlns="http://www.w3.org/2000/svg">
+  <path d="M5.994 0C2.682 0 0 2.688 0 6C0 9.312 2.682 12 5.994 12C9.312 12 12 9.312 12 6C12 2.688 9.312 0 5.994 0ZM10.152 3.6H8.382C8.19 2.85 7.914 2.13 7.554 1.464C8.658 1.842 9.576 2.61 10.152 3.6ZM6 1.224C6.498 1.944 6.888 2.742 7.146 3.6H4.854C5.112 2.742 5.502 1.944 6 1.224ZM1.356 7.2C1.26 6.816 1.2 6.414 1.2 6C1.2 5.586 1.26 5.184 1.356 4.8H3.384C3.336 5.196 3.3 5.592 3.3 6C3.3 6.408 3.336 6.804 3.384 7.2H1.356ZM1.848 8.4H3.618C3.81 9.15 4.086 9.87 4.446 10.536C3.342 10.158 2.424 9.396 1.848 8.4ZM3.618 3.6H1.848C2.424 2.604 3.342 1.842 4.446 1.464C4.086 2.13 3.81 2.85 3.618 3.6ZM6 10.776C5.502 10.056 5.112 9.258 4.854 8.4H7.146C6.888 9.258 6.498 10.056 6 10.776ZM7.404 7.2H4.596C4.542 6.804 4.5 6.408 4.5 6C4.5 5.592 4.542 5.19 4.596 4.8H7.404C7.458 5.19 7.5 5.592 7.5 6C7.5 6.408 7.458 6.804 7.404 7.2ZM7.554 10.536C7.914 9.87 8.19 9.15 8.382 8.4H10.152C9.576 9.39 8.658 10.158 7.554 10.536ZM8.616 7.2C8.664 6.804 8.7 6.408 8.7 6C8.7 5.592 8.664 5.196 8.616 4.8H10.644C10.74 5.184 10.8 5.586 10.8 6C10.8 6.414 10.74 6.816 10.644 7.2H8.616Z" />
+</svg>
+  <span class="sr-only">
+    Select language, opens an overlay
+  </span>
+</a>
+
+<script type="text/html" data-js="language_switcher_overlay">
+  <div class="language_switcher_overlay">
+    <h3>Select language</h3>
+    <ul>
+        <li><a href="/info/switch_language?external=false&amp;selected_language=fr-CA" class="" lang="fr-CA">Français </a></li>
+    </ul>
+  </div>
+</script>
+
+          </div>
+
+        <div class="pull-left visible-xs help_location_links_xs">
+          <a href="https://help.bibliocommons.com"
+   class="biblio_bar_link header_help_link"
+   data-js="header_help_link"
+   data-target="header_help_dropdown_menu"
+   data-ga-category="header_help_link"
+   data-ga-label="Help Link"
+   testid="link_help">
+  <i aria-hidden="true" class=" icon-help-circled"></i>
+  <span class="hidden-xs" aria-hidden="true">Help</span>
+  <span class="sr-only">Help, opens a new window</span>
+</a>
+
+        </div>
+
+        <div class="pull-right header_biblio_bar_right" >
+          <div class="hidden-xs help_location_links" >
+
+              <a href="https://help.bibliocommons.com"
+   class="biblio_bar_link header_help_link"
+   data-js="header_help_link"
+   data-target="header_help_dropdown_menu"
+   data-ga-category="header_help_link"
+   data-ga-label="Help Link"
+   testid="link_help">
+  <i aria-hidden="true" class=" icon-help-circled"></i>
+  <span class="hidden-xs" aria-hidden="true">Help</span>
+  <span class="sr-only">Help, opens a new window</span>
+</a>
+
+          </div>
+          <!-- begin BCNAV -->
+<div data-js="bc_my_account_nav" class="bc_my_account_nav">
+  <!-- Template: t_biblionav_admin_nav -->
+<div class="admin_nav hidden"
+     data-js="biblionav_admin_nav"
+     testid="admin_nav">
+  <a href="#" aria-expanded="false" class="biblio_bar_link admin_nav_trigger dropdown-toggle hide_trigger_icon" data-js="admin_nav_trigger" data-toggle="dropdown" id="admin_nav_trigger" testid="admin_nav_trigger">
+    <svg aria-hidden="false" class="svg_icon " focusable="false" height="14" viewBox="0 0 30 32" width="14" xmlns="http://www.w3.org/2000/svg">
+  <title>Admin</title>
+<path d="M6.848 26.272q0-0.448-0.32-0.8t-0.8-0.32-0.8 0.32-0.352 0.8 0.352 0.8 0.8 0.352 0.8-0.352 0.32-0.8zM18.368 18.784l-12.192 12.192q-0.672 0.64-1.6 0.64t-1.632-0.64l-1.888-1.952q-0.672-0.64-0.672-1.6 0-0.928 0.672-1.632l12.16-12.16q0.704 1.76 2.048 3.104t3.104 2.048zM29.696 11.008q0 0.704-0.416 1.888-0.864 2.4-2.944 3.904t-4.608 1.472q-3.328 0-5.664-2.336t-2.336-5.664 2.336-5.632 5.664-2.368q1.024 0 2.144 0.32t1.92 0.832q0.288 0.192 0.288 0.48t-0.288 0.512l-5.216 3.008v4l3.456 1.92q0.064-0.064 1.408-0.864t2.4-1.44 1.28-0.64q0.256 0 0.416 0.16t0.16 0.448z"></path>
+</svg>
+<span aria-hidden="true" class="hidden-sm hidden-xs">Admin</span><span class="sr-only" data-js="sr-only-dropdown-toggle" data-text-collapsed="Admin, collapsed" data-text-expanded="Admin, expanded">Admin, collapsed</span><span aria-hidden="true" class="icon-arrow"></span></a>
+  <ul class="dropdown-menu admin_nav_menu"
+      data-js="admin_nav_menu"
+      aria-labelledby="admin_nav_trigger">
+  </ul>
+</div>
+
+<script id="t_biblionav_admin_nav" type="x-handlebars-template">
+  {{#if admin_nav.length}}
+    <li aria-hidden="true" class="dropdown-header">
+      Library
+    </li>
+
+    {{#each admin_nav}}
+      <li aria-hidden="true">
+        <a href="{{link}}" testid="biblionav_admin_{{locals.testid}}">{{title}}</a>
+      </li>
+    {{/each}}
+  {{/if}}
+
+  {{#if bcadmin_nav.length}}
+    <li aria-hidden="true" class="divider"></li>
+
+    <li aria-hidden="true" class="dropdown-header">
+      BC Admin
+    </li>
+
+    {{#each bcadmin_nav}}
+      <li aria-hidden="true">
+        <a href="{{link}}" testid="biblionav_admin_{{locals.testid}}">{{title}}</a>
+      </li>
+    {{/each}}
+  {{/if}}
+</script>
+
+
+  <div class="biblio_bar_my_account">
+    <a href="javascript:void(0);"
+       class="dropdown-toggle my_account_toggle biblio_bar_link hide_trigger_icon "
+       data-test-id="user_state_logged_out"
+       id="biblionav_account_trigger"
+       data-js="biblionav_account_trigger"
+       data-toggle="dropdown"
+       aria-haspopup="true"
+       aria-expanded="false">
+        <!-- Template: t_biblionav_account_trigger -->
+          <span data-test-id="biblio-bar-login">
+            Log In / My OPL
+          </span>
+    </a>
+
+    <ul class="dropdown-menu biblionav_my_account"
+        data-js="biblionav_my_account"
+        aria-labelledby="biblionav_account_trigger">
+
+      <!-- Template - t_biblionav_my_account_user_info -->
+      <li class="info" data-js="biblionav_my_account_user_info">
+        <a href="https://ottawa.bibliocommons.com/user/login" class="btn btn-transactional btn-block log_in_btn" data-ga-category="biblionav_my_account_login" data-js="header_login_link" testid="biblionav_login">Log In / Register</a>
+      </li>
+
+
+        <li aria-hidden="true" role="presentation" class="divider"></li>
+
+
+          <li>
+            <a href="https://ottawa.bibliocommons.com/dashboard/user_dashboard" class=" " data-ga-category="biblionav_my_account_dashboard" testid="biblionav_mylibrary">My Library Dashboard</a>
+</li>
+        <li aria-hidden="true" role="presentation" class="divider"></li>
+
+          <li class="dropdown-header">My Borrowing</li>
+
+          <li>
+            <a href="https://ottawa.bibliocommons.com/checkedout" class=" indented" data-ga-category="biblionav_my_account_checkedout" testid="biblionav_checkedout">Checked Out</a>
+</li>          <li>
+            <a href="https://ottawa.bibliocommons.com/holds" class=" indented" data-ga-category="biblionav_my_account_holds" testid="biblionav_holds">On Hold</a>
+</li>          <li>
+            <a href="https://ottawa.bibliocommons.com/recentlyreturned" class="hidden indented" data-ga-category="biblionav_my_account_recentlyreturned" data-js="borrowing_history_menu_item" testid="biblionav_borrowing_history">Borrowing History</a>
+</li>          <li>
+            <a href="https://ottawa.bibliocommons.com/fines" class=" indented" data-ga-category="biblionav_my_account_fines" testid="biblionav_fines">Fees</a>
+</li>          <li>
+            <a href="https://ottawa.bibliocommons.com/v2/interlibraryloans" class="hidden indented" data-ga-category="biblionav_my_account_nav_item">ILL Requests</a>
+</li>
+        <li aria-hidden="true" role="presentation" class="divider"></li>
+
+          <li class="dropdown-header">My Collections</li>
+
+          <li>
+            <a href="https://ottawa.bibliocommons.com/collection/show/my/library/for_later" class=" indented" data-ga-category="biblionav_my_account_shelves_future" testid="biblionav_shelves_future">For Later Shelf</a>
+</li>          <li>
+            <a href="https://ottawa.bibliocommons.com/collection/show/my/library/completed" class=" indented" data-ga-category="biblionav_my_account_shelves_past" testid="biblionav_shelves_past">Completed Shelf</a>
+</li>          <li>
+            <a href="https://ottawa.bibliocommons.com/collection/show/my/library/in_progress" class=" indented" data-ga-category="biblionav_my_account_shelves_present" testid="biblionav_shelves_present">In Progress Shelf</a>
+</li>          <li>
+            <a href="https://ottawa.bibliocommons.com/lists/show/mine" class=" indented" data-ga-category="biblionav_my_account_lists" testid="biblionav_lists">Lists</a>
+</li>
+        <li aria-hidden="true" role="presentation" class="divider"></li>
+
+          <li class="dropdown-header">Online fees &amp; printer/copier credit</li>
+
+          <li>
+            <a href="https://smartpay.biblioottawalibrary.ca/scripts/SmartPay/SmartPay.dll?FineLogin&amp;Language=English&amp;BranchID=OttawaSP" class=" indented" data-ga-category="biblionav_my_account_nav_item">SmartPay</a>
+</li>
+        <li aria-hidden="true" role="presentation" class="divider"></li>
+
+          <li class="dropdown-header">My Events and Bookings</li>
+
+          <li>
+            <a href="https://biblioottawalibrary.ca/user/bookings" class=" indented" data-ga-category="biblionav_my_account_nav_item">My room and equipment bookings</a>
+</li>          <li>
+            <a href="https://biblioottawalibrary.ca/user/bookmarks" class=" indented" data-ga-category="biblionav_my_account_nav_item">My bookmarks</a>
+</li>          <li>
+            <a href="https://biblioottawalibrary.ca/user/registrations" class=" indented" data-ga-category="biblionav_my_account_nav_item">My event registrations</a>
+</li>          <li>
+            <a href="https://biblioottawalibrary.ca/en/user/ill" class=" indented" data-ga-category="biblionav_my_account_nav_item">My ILL requests</a>
+</li>
+        <li aria-hidden="true" role="presentation" class="divider"></li>
+
+
+          <li>
+            <a href="https://ottawa.bibliocommons.com/user_profile/me" class=" " data-ga-category="biblionav_my_account_myprofile" testid="biblionav_myprofile">My Profile</a>
+</li>
+        <li aria-hidden="true" role="presentation" class="divider"></li>
+
+
+          <li>
+            <a href="https://ottawa.bibliocommons.com/account" class=" " data-ga-category="biblionav_my_account_mysettings" testid="biblionav_mysettings">My Settings</a>
+</li>
+      <!-- Template: t_biblionav_account_selector -->
+      <li data-js='biblionav_account_selector'></li>
+      
+    </ul>
+  </div>
+
+
+</div>
+<!-- end BCNAV -->
+
+<script id="t_biblionav_divider" type="x-handlebars-template">
+  <li aria-hidden="true" role="presentation" class="divider" data-js="divider_{{divider_name}}"></li>
+</script>
+
+<script id="t_biblionav_account_trigger" type="x-handlebars-template">
+  {{#if logged_in}}
+    <div class="cp_user_avatar sm home_patron" testid="user_avatar_{{user_id}}">
+      {{#if user_avatar}}
+        <img src="{{user_avatar}}" class="img-circle" alt="">
+      {{else}}
+        <div class="img-circle initial"><span aria-hidden="true">{{user_initial}}</span></div>
+      {{/if}}
+    </div>
+    <span class="hidden-xs user_identity_name" aria-hidden= "true">{{user_name}}</span>
+    <span class="sr-only hidden-xs" data-js="sr-only-dropdown-toggle" data-text-collapsed="User {{user_name}}." data-text-expanded="User {{user_name}}.">User {{user_name}}.</span>
+    <span class="sr-only visible-xs" data-js="sr-only-dropdown-toggle" data-text-collapsed="For {{user_name}}. Double-tap to expand." data-text-expanded="Menu for {{user_name}} shows pop-up">For {{user_name}}. Double-tap to expand.</span>
+  {{else}}
+    <span aria-hidden= "true" class="my_account_label">Log In / My OPL</span>
+    <span class="sr-only" data-js="sr-only-dropdown-toggle" data-text-collapsed="User Log In / My OPL." data-text-expanded="User Log In / My OPL.">User Log In / My OPL.</span>
+  {{/if}}
+
+  <span class="icon-arrow" aria-hidden="true"></span>
+</script>
+
+<script id="t_biblionav_my_account_user_info" type="x-handlebars-template">
+  <li class="info" data-js="biblionav_my_account_user_info">
+    {{#if logged_in}}
+      <div class="pull-left">
+        <div class="my-account"><b>My Account</b></div>
+      </div>
+      <div class="pull-right notification-buttons">
+        <a href="https://ottawa.bibliocommons.com/user_profile/me/notification_feed" class="btn btn-default btn-flat" data-ga-category="biblionav_my_account_notifications" testid="biblionav_notifications">
+            <i aria-hidden="true" class=" icon-bell"></i>
+            {{#if unread_notifications}}
+              <span class="badge" aria-hidden="true">{{unread_notifications}}</span>
+              <span class="sr-only">
+                {{unread_notifications}} notifications
+              </span>
+            {{else}}
+              <span class="sr-only">Notifications</span>
+            {{/if}}
+</a>        
+        <a href="https://ottawa.bibliocommons.com/account/personal_information" class="btn btn-default btn-flat" data-ga-category="biblionav_my_account_mysettings" data-ga-label="Settings Icon" testid="biblionav_mysettings">
+          <i aria-hidden="true" class=" icon-cog"></i>
+          <span class="sr-only">My Settings</span>
+</a>      </div>
+      <a href="https://ottawa.bibliocommons.com/user/logout" class="btn btn-transactional btn-block log_out_btn" data-ga-category="biblionav_my_account_logout" testid="biblionav_logout">Log Out</a>
+    {{else}}
+      <a href="https://ottawa.bibliocommons.com/user/login" class="btn btn-transactional btn-block log_in_btn" data-ga-category="biblionav_my_account_login" data-js="header_login_link" testid="biblionav_login">Log In / Register</a>
+    {{/if}}
+  </li>
+</script>
+
+<script id="t_biblionav_account_selector" type="x-handlebars-template">
+  <ul>
+    <li aria-hidden="true" role="presentation" class="divider"></li>
+    <li aria-hidden="true" role="presentation" class="dropdown-header">
+      Switch Library Account
+    </li>
+    {{#each accounts}}
+      <li>
+        <a href="https://{{link}}"
+           class="indented"
+           data-js="switch_linked_library"
+           data-host="{{link}}"
+           data-ga-category="biblionav_my_account_switch_account"
+           testid="biblionav_multiaccount_lib_{{text}}">
+          {{text}} <i aria-hidden="true" class=" icon-right"></i>
+        </a>
+      </li>
+    {{/each}}
+  </ul>
+</script>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div><!-- /.cp_header_biblio_bar -->
+
+
+    <div class="header_main">
+      <div class="client_and_search" data-test-id="header-desktop-search">
+  <div class="container">
+    <div class="pull-left cp_header_client_area">
+  <div class="pull-left logo">
+    <a href="http://biblioottawalibrary.ca/"><picture><source media="(max-width: 991px)" sizes="64px" srcset="//cor-liv-cdn-static.bibliocommons.com/images/ONT-OTTAWA_BRANCH/mobile_logo.png?1666801531337" /><img alt="Ottawa Public Library" src="//cor-liv-cdn-static.bibliocommons.com/images/ONT-OTTAWA_BRANCH/logo.png?1666801531337" title="" /></picture></a>
+  </div>
+
+  <div class="pull-left visible-xs-block visible-sm-block xs_icon_triggers">
+    <a href="#" aria-label="Main navigation" data-ga-category="mobile_header_main_nav" data-ga-label="Mobile Main Nav" data-js="header_nav_xs_trigger" data-main-nav="true" data-target="header-main-nav" id="header_nav_xs_trigger" role="button"><i aria-hidden="true" class=" icon-menu"></i><span class="sr-only">Main navigation</span></a>
+
+  </div>
+</div>
+
+    <div class="visible-xs-block visible-sm-block xs_icon_triggers">
+      <a href="#" aria-label="Open search form" class="header_search_xs" data-icon-off="icon-cancel" data-icon-on="icon-search" data-js="header_search_xs_trigger" role="button"><i aria-hidden="true" class=" icon-search"></i><span class="sr-only">Open search form</span></a>
+    </div>
+
+    <div class="hidden-xs hidden-sm header_collapsible_search_wrapper">
+
+      <div class="header_search_wrapper header_search_wrapper_desktop header_search_catalogue" data-js="header_search_wrapper header_search_wrapper_desktop">
+        <div class="cp_header_search" id="header_search" data-js="header_search">
+          <div>
+              <div class="pull-left">
+                <span class="connector" aria-hidden="true">Search the</span>
+                <div class="bootstrap-select-wrapper" data-test-id="header-other-search-options"><select aria-label="Search alternatives" class=" selectpicker form-control" data-dropup-auto="false" data-js="header_search_target" data-style="btn-flat btn-default" id="searchOpt" name="searchOpt" testid="search_scope"><option value="catalogue" data-action="https://ottawa.bibliocommons.com/search" data-query-field="q">Catalogue</option>
+<option value="website" data-action="https://biblioottawalibrary.ca/en/search_results?text=__QUERY__" data-query-field="">Website</option></select></div>
+
+              </div>
+
+            <form action="https://ottawa.bibliocommons.com/search" class="collapsible_search_form" data-js="header_search_form desktop_search_form" id="desktop_search_form" name="desktop_search_form">
+              <div class="pull-left">
+                    <div data-js="header_target_search_options" data-target="catalogue">
+                      <div class="form-group">
+  <span class="connector" aria-hidden="true">
+    by
+  </span>
+  <!-- begin SEARCH TYPE -->
+<div class="bootstrap-select-wrapper" data-test-id="header-search-type-dropdown"><select aria-label="Search type" class="form-control selectpicker form-control" data-dropup-auto="false" data-js="search_type" data-style="btn-flat btn-default" id="search_filter_id_1o7umtjf88s3qoi53rr4cqla1n" name="t" testid="search_filter"><option value="smart">Keyword</option>
+<option value="title">Title</option>
+<option value="author">Author</option>
+<option value="series">Series</option>
+<option value="subject">Subject</option>
+<option value="tag">Tag</option>
+<option value="userlist">List</option>
+<option value="user">User</option></select></div>
+
+<input data-js="search_category" id="search_category_id_5ucnk0kuohfjvqja10kttriqgg" name="search_category" testid="search_category" type="hidden" value="keyword" />
+<!-- end SEARCH TYPE-->
+</div>
+
+
+
+
+</div>              </div>
+
+              <!-- begin SEARCH INPUT -->
+
+  <div class="input-group header_search_box">
+
+    <label class="sr-only" for="search_box_id_sbhkbq4imsidg417vtil1dmed">Enter search query</label>
+    
+    <span class="main_search_input_wrapper" data-js="main_search_input_wrapper">
+      <input aria-activedescendant="" aria-autocomplete="both" aria-expanded="false" aria-owns="header_auto_suggest_id_3imakj4sbumrgn142gjhfbrj4i" autocomplete="off" class="form-control main_search_input text" data-js="main_search_input" id="search_box_id_sbhkbq4imsidg417vtil1dmed" maxlength="1000" name="q" testid="main_search_input" type="search" />
+      <span class="header_search_filter_lock form-control-feedback" data-js="search_filter_locked" aria-hidden="true">
+        <svg aria-hidden="true" class="svg_icon " focusable="false" height="14" style="transform: rotate(-45deg);" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg">
+  <path d="M8.5 0l-1.5 1.5 1.5 1.5-3.5 4h-3.5l2.75 2.75-4.25 5.635v0.615h0.615l5.635-4.25 2.75 2.75v-3.5l4-3.5 1.5 1.5 1.5-1.5-7.5-7.5zM7 8.5l-1-1 3.5-3.5 1 1-3.5 3.5z" />
+</svg>
+      </span>
+
+      <button class="btn btn-link header_search_clear_button" data-js="header_search_clear_button" type="button">
+        <div class="sr-only">
+          Clear Text
+        </div>
+        <svg aria-hidden="true" class="svg_icon svg_close_icon" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+  <rect width="2" height="16" x="6.964" y="-.036" fill="currentColor" transform="rotate(45 7.964 7.964)"/>
+  <rect width="2" height="16" x="6.964" y="-.036" fill="currentColor" transform="scale(-1 1) rotate(45 0 -11.263)"/>
+</svg>
+</button>
+        <div data-js="header_auto_suggest" class="cp_header_auto_suggest hidden">
+  <div data-js="auto_suggest_aria_messages" class="sr-only" role="alert" aria-live="polite" aria-atomic="false"></div>
+  <ul id="header_auto_suggest_id_3imakj4sbumrgn142gjhfbrj4i" data-js="suggestion-menu" class="dropdown-menu" role="listbox"></ul>
+
+  <div class="hidden">
+    <svg aria-hidden="true" class="suggestion-skeleton-icon pulse" data-js="suggestion_skeleton_svg" focusable="false" height="14" preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 10" width="14" xmlns="http://www.w3.org/2000/svg">
+  <rect fill="currentColor" width="2000" height="10"></rect>
+</svg>
+  </div>
+</div>
+
+
+    </span>
+
+    <span class="input-group-btn">
+      <button type="submit" class="btn btn-primary btn-flat">
+        <i aria-hidden="true" class=" icon-search"></i>
+        <span class="sr-only">Search</span>
+      </button>
+    </span>
+  </div>
+
+<!-- end SEARCH INPUT -->
+
+</form>          </div>
+
+          <div class="pull-right small adv_search">
+            <a href="https://ottawa.bibliocommons.com/user/saved_searches" class="hidden" data-ga-category="header_saved_searches" data-js="save_search_overlay" testid="link_savedsearches">Saved Searches</a>
+
+            <a href="https://ottawa.bibliocommons.com/search" test_id="link_advancedsearch">Advanced Search</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- /.client_and_search -->
+
+<div class="clearfix header_search_wrapper search_wrapper_xs header_search_catalogue" data-js="header_search_wrapper header_search_wrapper_xs" data-test-id="header-mobile-search">
+  <div class="col-xs-12">
+    <div class="cp_header_search"  data-js="header_search">
+      <h2 data-js="header_search_title" class="header_search_title" tabindex="-1">
+        Search
+      </h2>
+
+        <div class="form-group">
+          <div class="bootstrap-select-wrapper" data-test-id="header-other-search-options"><select aria-label="Search alternatives" class=" selectpicker form-control" data-dropup-auto="false" data-js="header_search_target" data-style="btn-flat btn-default" id="searchOpt" name="searchOpt" testid="search_scope"><option value="catalogue" data-action="https://ottawa.bibliocommons.com/search" data-query-field="q">Catalogue</option>
+<option value="website" data-action="https://biblioottawalibrary.ca/en/search_results?text=__QUERY__" data-query-field="">Website</option></select></div>
+
+        </div>
+
+      <form accept-charset="UTF-8" action="https://ottawa.bibliocommons.com/search" data-js="header_search_form mobile_search_form" id="mobile_search_form" method="get" name="mobile_search_form"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+            <div data-js="header_target_search_options" data-target="catalogue">
+              <div class="form-group">
+  <span class="connector" aria-hidden="true">
+    by
+  </span>
+  <!-- begin SEARCH TYPE -->
+<div class="bootstrap-select-wrapper" data-test-id="header-search-type-dropdown"><select aria-label="Search type" class="form-control selectpicker form-control" data-dropup-auto="false" data-js="search_type" data-style="btn-flat btn-default" id="search_filter_id_3d9cbovp95m29fbh7nsv059lk5" name="t" testid="search_filter"><option value="smart">Keyword</option>
+<option value="title">Title</option>
+<option value="author">Author</option>
+<option value="series">Series</option>
+<option value="subject">Subject</option>
+<option value="tag">Tag</option>
+<option value="userlist">List</option>
+<option value="user">User</option></select></div>
+
+<input data-js="search_category" id="search_category_id_3i3eugfgeq1pe0b523bq8hqb9h" name="search_category" testid="search_category" type="hidden" value="keyword" />
+<!-- end SEARCH TYPE-->
+</div>
+
+
+
+
+</div>
+        <div class="form-group">
+          <!-- begin SEARCH INPUT -->
+
+  <div class="input-group header_search_box">
+
+    <label class="sr-only" for="search_box_id_2rk98pidnqhpnstkl4cqtn7vpi">Enter search query</label>
+    
+    <span class="main_search_input_wrapper" data-js="main_search_input_wrapper">
+      <input aria-activedescendant="" aria-autocomplete="both" aria-expanded="false" aria-owns="header_auto_suggest_id_1sudujj7hh2dk38c62nqoja2k5" autocomplete="off" class="form-control main_search_input text" data-js="main_search_input" id="search_box_id_2rk98pidnqhpnstkl4cqtn7vpi" maxlength="1000" name="q" testid="main_search_input" type="search" />
+      <span class="header_search_filter_lock form-control-feedback" data-js="search_filter_locked" aria-hidden="true">
+        <svg aria-hidden="true" class="svg_icon " focusable="false" height="14" style="transform: rotate(-45deg);" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg">
+  <path d="M8.5 0l-1.5 1.5 1.5 1.5-3.5 4h-3.5l2.75 2.75-4.25 5.635v0.615h0.615l5.635-4.25 2.75 2.75v-3.5l4-3.5 1.5 1.5 1.5-1.5-7.5-7.5zM7 8.5l-1-1 3.5-3.5 1 1-3.5 3.5z" />
+</svg>
+      </span>
+
+      <button class="btn btn-link header_search_clear_button" data-js="header_search_clear_button" type="button">
+        <div class="sr-only">
+          Clear Text
+        </div>
+        <svg aria-hidden="true" class="svg_icon svg_close_icon" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+  <rect width="2" height="16" x="6.964" y="-.036" fill="currentColor" transform="rotate(45 7.964 7.964)"/>
+  <rect width="2" height="16" x="6.964" y="-.036" fill="currentColor" transform="scale(-1 1) rotate(45 0 -11.263)"/>
+</svg>
+</button>
+        <div data-js="header_auto_suggest" class="cp_header_auto_suggest hidden">
+  <div data-js="auto_suggest_aria_messages" class="sr-only" role="alert" aria-live="polite" aria-atomic="false"></div>
+  <ul id="header_auto_suggest_id_1sudujj7hh2dk38c62nqoja2k5" data-js="suggestion-menu" class="dropdown-menu" role="listbox"></ul>
+
+  <div class="hidden">
+    <svg aria-hidden="true" class="suggestion-skeleton-icon pulse" data-js="suggestion_skeleton_svg" focusable="false" height="14" preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 10" width="14" xmlns="http://www.w3.org/2000/svg">
+  <rect fill="currentColor" width="2000" height="10"></rect>
+</svg>
+  </div>
+</div>
+
+
+    </span>
+
+    <span class="input-group-btn">
+      <button type="submit" class="btn btn-primary btn-flat">
+        <i aria-hidden="true" class=" icon-search"></i>
+        <span class="sr-only">Search</span>
+      </button>
+    </span>
+  </div>
+
+<!-- end SEARCH INPUT -->
+
+        </div>
+</form>
+      <div class="form-group pull-right adv_search">
+        <a href="https://ottawa.bibliocommons.com/user/saved_searches" class="hidden" data-ga-category="header_saved_searches" data-js="save_search_overlay" testid="link_savedsearches">Saved Searches</a>
+
+        <a href="https://ottawa.bibliocommons.com/search" test_id="link_advancedsearch">Advanced Search</a>
+
+      </div>
+    </div>
+    <!-- /.cp_header_search -->
+  </div>
+</div>
+
+      <div class="navbar yamm navbar-default hidden-xs hidden-sm cp_header_nav" data-js="header-top-nav">
+  <div class="container">
+    <nav class="navbar-collapse collapse col-md-12">
+      <ul class="nav navbar-nav header_main_nav"
+          id="header_main_nav" 
+          aria-haspopup="true"
+          data-js="header-main-nav">
+
+        <li class='desktop mobile'><a href="http://biblioottawalibrary.ca/en" data-ga-category="header_top_level_nav" data-ga-label="Home">Home</a></li><li class='dropdown desktop mobile' data-ga-category='header_top_level_nav' data-ga-label='Browse' data-ga-event='show'><a href="#browse_menu" class="dropdown-toggle hide_trigger_icon" data-toggle="dropdown"><span aria-hidden="true">Browse</span><span class="sr-only" data-js="sr-only-dropdown-toggle" data-text-collapsed="Browse, collapsed" data-text-expanded="Browse, expanded">Browse, collapsed</span><span aria-hidden="true" class="icon-arrow"></span></a><div class="dropdown-menu" data-listbox="true">   <div class="yamm-content"><div class="menu-column"><h3 class='desktop mobile'>Explore</h3><ul class='list-unstyled desktop mobile'><li class='desktop mobile'><a href="https://ottawa.bibliocommons.com/" data-ga-category="header_sub_level_nav" data-ga-label="Recent Activity - Browse">Recent Activity</a></li><li class='desktop mobile'><a href="https://ottawa.bibliocommons.com/explore/recent_arrivals" data-ga-category="header_sub_level_nav" data-ga-label="New Titles - Browse">New Titles</a></li><li class='desktop mobile'><a href="https://ottawa.bibliocommons.com/explore/awards" data-ga-category="header_sub_level_nav" data-ga-label="Awards - Browse">Awards</a></li><li class='desktop mobile'><a href="https://ottawa.bibliocommons.com/explore/bestsellers" data-ga-category="header_sub_level_nav" data-ga-label="Bestsellers - Browse">Bestsellers</a></li><li class='desktop mobile'><a href="https://biblioottawalibrary.ca/en/recommendations" data-ga-category="header_sub_level_nav" data-ga-label="Staff Picks - Browse">Staff Picks</a></li></ul><h3 class='desktop mobile'>Browse by format</h3><ul class='list-unstyled desktop mobile'><li class='desktop mobile'><a href="https://biblioottawalibrary.ca/en/collections/books" data-ga-category="header_sub_level_nav" data-ga-label="Books - Browse">Books</a></li><li class='desktop mobile'><a href="https://biblioottawalibrary.ca/en/collections/video" data-ga-category="header_sub_level_nav" data-ga-label="Video - Browse">Video</a></li><li class='desktop mobile'><a href="https://biblioottawalibrary.ca/en/collections/music" data-ga-category="header_sub_level_nav" data-ga-label="Music - Browse">Music</a></li><li class='desktop mobile'><a href="https://biblioottawalibrary.ca/en/collections/magazines" data-ga-category="header_sub_level_nav" data-ga-label="Magazines and Newspapers - Browse">Magazines and Newspapers</a></li><li class='desktop mobile'><a href="https://biblioottawalibrary.ca/en/databases/search-all" data-ga-category="header_sub_level_nav" data-ga-label="Online Resources - Browse">Online Resources</a></li><li class='desktop mobile'><a href="https://biblioottawalibrary.ca/en/collections/gaming" data-ga-category="header_sub_level_nav" data-ga-label="Gaming - Browse">Gaming</a></li><li class='desktop mobile'><a href="https://biblioottawalibrary.ca/en/library-apps-0" data-ga-category="header_sub_level_nav" data-ga-label="Apps - Browse">Apps</a></li></ul></div>    </div></div></li><li class='desktop mobile'><a href="http://biblioottawalibrary.ca/en/library" data-ga-category="header_top_level_nav" data-ga-label="Hours and Locations">Hours and Locations</a></li><li class='desktop mobile'><a href="http://biblioottawalibrary.ca/en/services" data-ga-category="header_top_level_nav" data-ga-label="Services">Services</a></li><li class='desktop mobile'><a href="http://biblioottawalibrary.ca/en/program" data-ga-category="header_top_level_nav" data-ga-label="Programs and Events">Programs and Events</a></li><li class='dropdown desktop mobile' data-ga-category='header_top_level_nav' data-ga-label='Make a Booking' data-ga-event='show'><a href="#make_a_booking_menu" class="dropdown-toggle hide_trigger_icon" data-toggle="dropdown"><span aria-hidden="true">Make a Booking</span><span class="sr-only" data-js="sr-only-dropdown-toggle" data-text-collapsed="Make a Booking, collapsed" data-text-expanded="Make a Booking, expanded">Make a Booking, collapsed</span><span aria-hidden="true" class="icon-arrow"></span></a><div class="dropdown-menu" data-listbox="true">   <div class="yamm-content"><div class="menu-column"><ul class="list-unstyled"><li class='desktop mobile'><a href="https://biblioottawalibrary.ca/en/pc-bookings" data-ga-category="header_sub_level_nav" data-ga-label="Book a Computer - Make a Booking">Book a Computer</a></li><li class='desktop mobile'><a href="https://biblioottawalibrary.ca/en/imagine-space-and-labs" data-ga-category="header_sub_level_nav" data-ga-label="Imagine Space and Labs - Make a Booking">Imagine Space and Labs</a></li><li class='desktop mobile'><a href="https://biblioottawalibrary.ca/en/library-tutorial-11" data-ga-category="header_sub_level_nav" data-ga-label="Library 1:1 - Make a Booking">Library 1:1</a></li><li class='desktop mobile'><a href="https://biblioottawalibrary.ca/en/print-request-form" data-ga-category="header_sub_level_nav" data-ga-label="Print Request Form - Make a Booking">Print Request Form</a></li><li class='desktop mobile'><a href="https://biblioottawalibrary.ca/en/booking-meeting-room" data-ga-category="header_sub_level_nav" data-ga-label="Rent a meeting room - Make a Booking">Rent a meeting room</a></li><li class='desktop mobile'><a href="https://biblioottawalibrary.ca/en/equipment" data-ga-category="header_sub_level_nav" data-ga-label="Book equipment - Make a Booking">Book equipment</a></li></ul></div>    </div></div></li>
+
+      </ul>
+
+    </nav>
+
+  </div>
+</div>
+<!-- /.cp_header_nav -->
+
+<script id="t_biblionav_header_nav_xs" type="x-handlebars-template">
+  <div class="navbar yamm navbar-default cp_header_nav">
+    <nav class="col-xs-12">
+
+      {{{nav_html}}}
+
+    </nav>
+  </div>
+</script>
+
+    </div>
+  </div><!-- /.cp_header -->
+</div>
+
+
+  <div class="container container_for_page">
+
+    <div id="page">
+
+      <div class="legacy_page_row">
+
+          
+
+        
+
+        <div id="top_banner">
+            <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-offset-0 col-lg-12">
+    <div class="row cp_explore_navigation">
+  <div class="col-sm-3 heading">
+    <div class="hidden-xs">Explore the Catalogue</div>
+    <div class="hidden-sm hidden-md hidden-lg" id="accordion">
+      <a href="#explore_nav_dropdown" id="explore_heading" class="context accordion" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="explore_nav_dropdown">
+        Explore the Catalogue<i aria-hidden="true" class=" icon-angle-down"></i>
+      </a>
+      <div id="explore_nav_dropdown" class="collapse out" aria-labelledby="explore_heading">
+        <a href="/dashboard" testid="explore_nav_recent_activity">Recent Activity</a>
+        <a href="https://ottawa.bibliocommons.com/explore/recent_arrivals" testid="explore_nav_newly_acquired">New Titles</a>
+        <a href="https://ottawa.bibliocommons.com/explore/awards" testid="explore_nav_awards">Awards</a>
+        <a href="https://ottawa.bibliocommons.com/explore/bestsellers" testid="explore_nav_bestsellers">Bestsellers</a>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="hidden-xs col-sm-9">
+    <ul class="nav nav-pills pull-right">
+      <li role="presentation"><a href="/dashboard" testid="explore_nav_recent_activity">Recent Activity</a></li>
+      <li role="presentation" class=""><a href="https://ottawa.bibliocommons.com/explore/recent_arrivals" testid="explore_nav_newly_acquired">New Titles</a></li>
+      <li role="presentation" class=""><a href="https://ottawa.bibliocommons.com/explore/awards" testid="explore_nav_awards">Awards</a></li>
+      <li role="presentation" class="active"><a href="https://ottawa.bibliocommons.com/explore/bestsellers" testid="explore_nav_bestsellers">Bestsellers</a></li>
+    </ul>
+  </div>
+</div>
+    <h1 id="content-start" class="bib_list_title">New York Times</h1>
+    
+  </div>
+
+        </div>
+
+        
+
+        <div id="main" class="clearfix row">
+            <div class="col-xs-4 col-sm-5 col-md-4 col-lg-3 cp_drawer cp_drawer_left" data-analytics="{ &quot;Section&quot;: &quot;Left&quot; }" data-js="drawer-element">
+      
+<div class="filterList facets reskinned_facets" data-js="filter_list">
+    <div class="visible_in_drawer facet_close" data-js="drawer_close">
+      <button type="button" class="close">
+        <span aria-hidden="true">&times;</span>
+        <span class="sr-only">Close</span>
+      </button>
+    </div>
+
+    <h3>Filter Results by...</h3>
+  <div class="filterGroup" role="tablist" aria-multiselectable="true">
+              <div data-analytics='{ "Primary Facet": "Category" }' class="facet multiple collapsable" id="expander_distinction_category">
+    <div data-analytics='{ "EventName":"Clicked Search Facet" }' role="tab" tabindex="0" id="facet_tab_distinction_category" aria-controls="facet_tabpanel_distinction_category" 
+    class=" clearfix button single" param="distinction_category">
+      <h5 class="mobile_list_heading" testid="facet_category_heading">
+        
+        Category
+</h5>      <i aria-hidden="true" class="collapsed_icon icon-down-dir"></i>
+      <i aria-hidden="true" class="expanded_icon icon-up-dir"></i>
+    </div>
+    <div role="tabpanel" aria-label="Category" id="facet_tabpanel_distinction_category" aria-labeledby="facet_tab_distinction_category">
+    <div class="appliedFilters">
+      <ul>
+      </ul>
+    </div>
+    <div class="collapseTarget" style="">
+      <ul class="facet_list">
+              		<li data-analytics='{ "EventName":"Search Filter", "State":"Applied" }' class="conjunctive"><a href="/bestsellers/show/5925_new_york_times?distinction_category=Children%27s+Picture+Books" data-value="Children's Picture Books" id="DISTINCTION_CATEGORY_Children's Picture Books" param="distinction_category" testid="link_distinction_category_children&#x27;s_picture_books">Children's Picture Books</a> <span class='count'>(10)</span></li>
+
+    		<li data-analytics='{ "EventName":"Search Filter", "State":"Applied" }' class="conjunctive"><a href="/bestsellers/show/5925_new_york_times?distinction_category=Hardcover+Fiction" data-value="Hardcover Fiction" id="DISTINCTION_CATEGORY_Hardcover Fiction" param="distinction_category" testid="link_distinction_category_hardcover_fiction">Hardcover Fiction</a> <span class='count'>(15)</span></li>
+
+    		<li data-analytics='{ "EventName":"Search Filter", "State":"Applied" }' class="conjunctive"><a href="/bestsellers/show/5925_new_york_times?distinction_category=Hardcover+Nonfiction" data-value="Hardcover Nonfiction" id="DISTINCTION_CATEGORY_Hardcover Nonfiction" param="distinction_category" testid="link_distinction_category_hardcover_nonfiction">Hardcover Nonfiction</a> <span class='count'>(15)</span></li>
+
+    		<li data-analytics='{ "EventName":"Search Filter", "State":"Applied" }' class="conjunctive"><a href="/bestsellers/show/5925_new_york_times?distinction_category=Middle+Grade" data-value="Middle Grade" id="DISTINCTION_CATEGORY_Middle Grade" param="distinction_category" testid="link_distinction_category_middle_grade">Middle Grade</a> <span class='count'>(10)</span></li>
+
+    		<li data-analytics='{ "EventName":"Search Filter", "State":"Applied" }' class="conjunctive"><a href="/bestsellers/show/5925_new_york_times?distinction_category=Paperback+Nonfiction" data-value="Paperback Nonfiction" id="DISTINCTION_CATEGORY_Paperback Nonfiction" param="distinction_category" testid="link_distinction_category_paperback_nonfiction">Paperback Nonfiction</a> <span class='count'>(15)</span></li>
+
+    		<li data-analytics='{ "EventName":"Search Filter", "State":"Applied" }' class="conjunctive"><a href="/bestsellers/show/5925_new_york_times?distinction_category=Paperback+Trade+Fiction" data-value="Paperback Trade Fiction" id="DISTINCTION_CATEGORY_Paperback Trade Fiction" param="distinction_category" testid="link_distinction_category_paperback_trade_fiction">Paperback Trade Fiction</a> <span class='count'>(15)</span></li>
+
+    		<li data-analytics='{ "EventName":"Search Filter", "State":"Applied" }' class="conjunctive"><a href="/bestsellers/show/5925_new_york_times?distinction_category=Young+Adult" data-value="Young Adult" id="DISTINCTION_CATEGORY_Young Adult" param="distinction_category" testid="link_distinction_category_young_adult">Young Adult</a> <span class='count'>(10)</span></li>
+
+
+      </ul>
+    </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+</div>  <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-offset-0 col-lg-9" data-analytics="{ &quot;Section&quot;: &quot;Center&quot; }">
+    
+  <div id="bibList" class="list_container">
+    <div class="cp_list_utility_bar col-xs-12" data-js="utility_bar">
+  <div class="utility_context_info">
+    <a href="#" data-js="drawer-trigger position_sticky" class="btn btn-primary btn-float hidden-lg pull-left filter_drawer_trigger" data-disabled_viewports="['lg']">
+      <i class="icon-filter"></i>
+    <span class="visible_if_sticky_position">
+        <span class="hidden-xs">
+          Filter these results
+        </span>
+        <span class="hidden-md hidden-sm hidden-lg">
+          Filter
+        </span>
+    </span>
+    </a>
+  </div>
+  <div class="filter_actions">
+    <div class="pull-right">
+      <div class="utility_bar_paginate">
+  <span class="items_showing_count">
+    1 - 10 of 90 items
+  </span>
+
+  <div class="pagination_arrows">
+    <a href="/explore/bestsellers/5925_new_york_times?page=0" class="utility_pagination_link disabled" data-analytics="{&quot;event&quot;:&quot;bc.paginationGoToPrevious&quot;,&quot;payload&quot;:{&quot;gtmCategory&quot;:&quot;v2-page-interactions&quot;,&quot;gtmAction&quot;:&quot;v2-link-click&quot;,&quot;gtmLabel&quot;:&quot;previous-page&quot;,&quot;gtmValue&quot;:1}}">
+      <i aria-hidden="true" class=" icon-angle-left"></i>
+      <span class="sr-only">Previous</span>
+</a>    <a href="/explore/bestsellers/5925_new_york_times?page=2" class="utility_pagination_link " data-analytics="{&quot;event&quot;:&quot;bc.paginationGoToNext&quot;,&quot;payload&quot;:{&quot;gtmCategory&quot;:&quot;v2-page-interactions&quot;,&quot;gtmAction&quot;:&quot;v2-link-click&quot;,&quot;gtmLabel&quot;:&quot;next-page&quot;,&quot;gtmValue&quot;:1}}">
+      <i aria-hidden="true" class=" icon-angle-right"></i>
+      <span class="sr-only">Next</span>
+</a>  </div>
+</div>
+    </div>
+    <div class="view_selector pull-right hidden-xs">
+      <a href="javascript:void(0);" class="current_view btn btn-flat btn-default view_btn" data-toggle="tooltip" id="view_medium" rel="nofollow" testid="link_viewmedium" title="Cover View">
+        <svg aria-hidden="false" class="svg_icon " focusable="false" height="14" viewBox="0 0 1792 1792" width="14" xmlns="http://www.w3.org/2000/svg">
+  <title>Cover View</title>
+  <path d="M512 1248v192q0 40-28 68t-68 28h-320q-40 0-68-28t-28-68v-192q0-40 28-68t68-28h320q40 0 68 28t28 68zm0-512v192q0 40-28 68t-68 28h-320q-40 0-68-28t-28-68v-192q0-40 28-68t68-28h320q40 0 68 28t28 68zm1280 512v192q0 40-28 68t-68 28h-960q-40 0-68-28t-28-68v-192q0-40 28-68t68-28h960q40 0 68 28t28 68zm-1280-1024v192q0 40-28 68t-68 28h-320q-40 0-68-28t-28-68v-192q0-40 28-68t68-28h320q40 0 68 28t28 68zm1280 512v192q0 40-28 68t-68 28h-960q-40 0-68-28t-28-68v-192q0-40 28-68t68-28h960q40 0 68 28t28 68zm0-512v192q0 40-28 68t-68 28h-960q-40 0-68-28t-28-68v-192q0-40 28-68t68-28h960q40 0 68 28t28 68z"/>
+</svg>
+</a>      <a href="/explore/bestsellers/5925_new_york_times?page=1&view=small" class=" btn btn-flat btn-default view_btn" data-toggle="tooltip" id="view_small" rel="nofollow" testid="link_viewsmall" title="Detail View">
+        <svg aria-hidden="false" class="svg_icon " focusable="false" height="14" viewBox="0 0 1792 1792" width="14" xmlns="http://www.w3.org/2000/svg">
+  <title>Detail View</title>
+  <path d="M256 1312v192q0 13-9.5 22.5t-22.5 9.5h-192q-13 0-22.5-9.5t-9.5-22.5v-192q0-13 9.5-22.5t22.5-9.5h192q13 0 22.5 9.5t9.5 22.5zm0-384v192q0 13-9.5 22.5t-22.5 9.5h-192q-13 0-22.5-9.5t-9.5-22.5v-192q0-13 9.5-22.5t22.5-9.5h192q13 0 22.5 9.5t9.5 22.5zm0-384v192q0 13-9.5 22.5t-22.5 9.5h-192q-13 0-22.5-9.5t-9.5-22.5v-192q0-13 9.5-22.5t22.5-9.5h192q13 0 22.5 9.5t9.5 22.5zm1536 768v192q0 13-9.5 22.5t-22.5 9.5h-1344q-13 0-22.5-9.5t-9.5-22.5v-192q0-13 9.5-22.5t22.5-9.5h1344q13 0 22.5 9.5t9.5 22.5zm-1536-1152v192q0 13-9.5 22.5t-22.5 9.5h-192q-13 0-22.5-9.5t-9.5-22.5v-192q0-13 9.5-22.5t22.5-9.5h192q13 0 22.5 9.5t9.5 22.5zm1536 768v192q0 13-9.5 22.5t-22.5 9.5h-1344q-13 0-22.5-9.5t-9.5-22.5v-192q0-13 9.5-22.5t22.5-9.5h1344q13 0 22.5 9.5t9.5 22.5zm0-384v192q0 13-9.5 22.5t-22.5 9.5h-1344q-13 0-22.5-9.5t-9.5-22.5v-192q0-13 9.5-22.5t22.5-9.5h1344q13 0 22.5 9.5t9.5 22.5zm0-384v192q0 13-9.5 22.5t-22.5 9.5h-1344q-13 0-22.5-9.5t-9.5-22.5v-192q0-13 9.5-22.5t22.5-9.5h1344q13 0 22.5 9.5t9.5 22.5z"/>
+</svg>
+</a>      <a href="/bestsellers/print_list/5925_new_york_times?page=1" alt="Print View" class=" btn btn-flat btn-default view_btn" data-popup="printWindow resizable=1,status=0,toolbar=0,scrollbars=1,location=0,menubar=0" data-toggle="tooltip" id="view_print" rel="nofollow" testid="link_print_entire_page" title="Print View">
+        <svg aria-hidden="false" class="svg_icon " focusable="false" height="14" viewBox="0 0 1792 1792" width="14" xmlns="http://www.w3.org/2000/svg">
+  <title>Print View</title>
+  <path d="M448 1536h896v-256h-896v256zm0-640h896v-384h-160q-40 0-68-28t-28-68v-160h-640v640zm1152 64q0-26-19-45t-45-19-45 19-19 45 19 45 45 19 45-19 19-45zm128 0v416q0 13-9.5 22.5t-22.5 9.5h-224v160q0 40-28 68t-68 28h-960q-40 0-68-28t-28-68v-160h-224q-13 0-22.5-9.5t-9.5-22.5v-416q0-79 56.5-135.5t135.5-56.5h64v-544q0-40 28-68t68-28h672q40 0 88 20t76 48l152 152q28 28 48 76t20 88v256h64q79 0 135.5 56.5t56.5 135.5z"/>
+</svg>
+</a></div>
+  </div>
+</div>
+    <div class="cp_bib_list clearfix">
+      
+<div data-alaytics='{ "SubFeature": "Bib" }' id="bib2581842" class="col-xs-12 list_item_outer clearfix" data-js="batch-action-item bib-list-item">
+  <div class="jacket_cover_container visible-md visible-lg col-md-2 col-lg-2">
+    		<div class='jacketCoverDiv'><img alt="I&#x27;m So Glad You Were Born" class="jacketCover bib_detail" data-js="" fallback="//cor-cdn-static.bibliocommons.com/assets/default_covers/icon-book-93409e4decdf10c55296c91a97ac2653.png" id="-2581842" src="https://secure.syndetics.com/index.aspx?isbn=9780310777021/MC.GIF&amp;client=ottap&amp;type=xw12&amp;oclc=" title="I&#x27;m So Glad You Were Born" /></div>
+  </div>
+
+  <div class="bg_white listItem col-md-10 col-xs-12">
+    <div class="row top_info list_item_section">
+      <div class="col-xs-10 col-sm-8">
+        <div class="pull-left visible-xs visible-sm">
+          		<div class='jacketCoverDiv'><img alt="I&#x27;m So Glad You Were Born" class="jacketCover bib_detail" data-js="" fallback="//cor-cdn-static.bibliocommons.com/assets/default_covers/icon-book-93409e4decdf10c55296c91a97ac2653.png" id="-2581842" src="https://secure.syndetics.com/index.aspx?isbn=9780310777021/MC.GIF&amp;client=ottap&amp;type=xw12&amp;oclc=" title="I&#x27;m So Glad You Were Born" /></div>
+        </div>
+        <span class="title">I&#x27;m So Glad You Were Born</span>
+        
+          
+
+        <div class="rating">
+          
+<div class="cp_ratings  " data-rating_value="0" data-js="ratings" data-read_only="true" data-bib_id="" data-inline_messaging="true" >
+  <div class="rating_wrapper rating_large rating_average" data-js="rating-wrapper">
+    <div class=" rating_icons" data-js="rating-icons" style="width: 0%;">
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+
+      <div class="col-xs-2 col-sm-4 text-right_sm">
+        <div class="hidden-xs">
+          
+        </div>
+        <div class="hidden-sm hidden-md hidden-lg">
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="secondary_info list_item_section visible-md visible-lg">
+        <span class="format">
+    <i aria-hidden="true" class=" icon-book"></i>Book
+      </span>
+
+      <!-- BESTSELLERS INFO -->
+  <span class="value bestSellerCategory">Children&#x27;s Picture Books</span>
+
+    <span class="value weeksOnList">3 weeks on list</span>
+
+    <div class="dataPair clearfix">
+      <span class="label">Position:</span>
+      <span class="value">1</span>
+    </div>
+
+    <div class="dataPair clearfix">
+      <span class="label">Last Week:</span>
+      <span class="value">1</span>
+    </div>
+
+    </div>
+
+    <div class="row circ_info list_item_section">
+      <div class="col-sm-3">
+        <div class="hidden-md hidden-lg">  <span class="format">
+    <i aria-hidden="true" class=" icon-book"></i>Book
+      </span>
+</div>
+            <span class="label">
+      <span class="value callNumber showOnPrint">
+        
+      </span>
+    </span>
+
+      </div>
+
+      <div class="col-sm-5 text_right_sm availability_block">
+      </div>
+
+      <div class="col-sm-4 text_right_sm">
+                  <button class="btn btn-highlight btn-block" data-js="cp_add_suggestion_overlay" data-suggestion="{&quot;libBibId&quot;:&quot;-2581842&quot;,&quot;title&quot;:&quot;I&#x27;m So Glad You Were Born&quot;,&quot;author&quot;:[&quot;Ainsley Earhardt&quot;],&quot;isbn&quot;:&quot;9780310777021&quot;}" data-test-id="add_suggestion" name="button" testid="link_makesuggestions" type="submit">Suggest for purchase</button>
+
+
+
+          <span class="hold_button" data-bundle="block_button" data-js="hold_button_container">
+</span>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div data-alaytics='{ "SubFeature": "Bib" }' id="bib2581844" class="col-xs-12 list_item_outer clearfix" data-js="batch-action-item bib-list-item">
+  <div class="jacket_cover_container visible-md visible-lg col-md-2 col-lg-2">
+    		<a href="/item/show/1350504026_creepy_crayon" class="jacketCoverLink" target="_parent"><img alt="Creepy Crayon!" class="jacketCover bib_detail" data-js="" fallback="//cor-cdn-static.bibliocommons.com/assets/default_covers/icon-book-93409e4decdf10c55296c91a97ac2653.png" id="1350504026" src="https://secure.syndetics.com/index.aspx?isbn=9781534465886/MC.GIF&amp;client=ottap&amp;type=xw12&amp;oclc=" title="Creepy Crayon!" /></a>
+  </div>
+
+  <div class="bg_white listItem col-md-10 col-xs-12">
+    <div class="row top_info list_item_section">
+      <div class="col-xs-10 col-sm-8">
+        <div class="pull-left visible-xs visible-sm">
+          		<a href="/item/show/1350504026_creepy_crayon" class="jacketCoverLink" target="_parent"><img alt="Creepy Crayon!" class="jacketCover bib_detail" data-js="" fallback="//cor-cdn-static.bibliocommons.com/assets/default_covers/icon-book-93409e4decdf10c55296c91a97ac2653.png" id="1350504026" src="https://secure.syndetics.com/index.aspx?isbn=9781534465886/MC.GIF&amp;client=ottap&amp;type=xw12&amp;oclc=" title="Creepy Crayon!" /></a>
+        </div>
+        <span class="title"><a href="/item/show/1350504026_creepy_crayon" target="_parent" testid="bib_link" title="Creepy Crayon! (Book)">Creepy Crayon!</a></span>
+        
+          
+	  <span class="author">
+       By <a href="/search?q=Reynolds%2C+Aaron%2C+1970-&amp;search_category=author&amp;t=author" class="author_detail_link" target="_parent" testid="author_search" title="Reynolds, Aaron, 1970-">Reynolds, Aaron, 1970-</a>
+	  </span>
+
+        <div class="rating">
+          
+<div class="cp_ratings  rated" data-rating_value="9" data-js="ratings" data-read_only="true" data-bib_id="" data-inline_messaging="true" >
+  <div class="rating_wrapper rating_large rating_average" data-js="rating-wrapper">
+    <div class=" rating_icons" data-js="rating-icons" style="width: 90%;">
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+
+      <div class="col-xs-2 col-sm-4 text-right_sm">
+        <div class="hidden-xs">
+          <div class="cp_shelf_dropdown">
+  <div class="shelf_actions" id="id_v0npj57gjrbae7lvli2ref026" data-js="shelf-actions">
+    <div class="dropdown clearfix" id="bibStatus_1350504026_id_v0npj57gjrbae7lvli2ref026" data-js="add_to_shelf_dropdown">
+      <div class="btn-group add_to_shelf_btn_group">
+          <a href="/collection/add/my/library?bib=1350504026&amp;bib_status=future&amp;button_styles%5B%5D=bootstrap&amp;button_styles%5B%5D=combo_button" class="btn btn-default add_to_shelf_main_action" data-test-id="add-to-shelf-action" rel="nofollow" with_hook="shelf_dropdown"><svg aria-hidden="true" class="svg_icon shelves-outline_icon" focusable="false" height="18" viewBox="0 -1 24 21" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" fill-rule="evenodd" d="M17,3 L7,3 C5.9,3 5,3.9 5,5 L5,21 L12,18 L19,21 L19,5 C19,3.9 18.1,3 17,3 Z M17,18 L12,15.82 L7,18 L7,5 L17,5 L17,18 Z" /> />
+</svg> For Later</a>
+          <a href="#" class="btn btn-default trigger dropdown-toggle " data-target="" data-toggle="dropdown" role="button" testid="add_to_shelf_dropdown">
+              <span class="sr-only">Toggle Dropdown</span>
+</a>        
+        <ul class="dropdown-menu dropdown-menu-right" data-js="add_to_shelf_dropdown_menu">
+            <li><a href="/collection/add/my/library?bib=1350504026&amp;bib_status=past&amp;button_styles%5B%5D=bootstrap&amp;button_styles%5B%5D=combo_button" testid="add_to_Completed" with_hook="shelf_dropdown">Completed</a></li>
+            <li><a href="/collection/add/my/library?bib=1350504026&amp;bib_status=present&amp;button_styles%5B%5D=bootstrap&amp;button_styles%5B%5D=combo_button" testid="add_to_In_Progress" with_hook="shelf_dropdown">In Progress</a></li>
+        </ul>
+</div>    </div>
+  </div>
+</div>
+        </div>
+        <div class="hidden-sm hidden-md hidden-lg">
+            <div class="mini_shelf_btn extra_action_panel ">
+    <a href="/collection/add_bib_overlay/1350504026/for_later?privacy_toggle=true" class="btn btn-default btn-flat pull-right " data-container="body" data-default-tooltip-text="Add to My For Later Shelf" data-ga-action="Add To Shelf" data-ga-category="search" data-ga-label="Mobile" data-js="shelf-inline-overlay hide-when-batch-item-checked action-link" data-on-shelf-text="On my shelf" data-placement="bottom" data-title="Add to My For Later Shelf" data-toggle="tooltip">
+      <svg aria-hidden="true" class="svg_icon shelves-outline_icon" focusable="false" height="20" viewBox="0 -1 24 21" width="20" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" fill-rule="evenodd" d="M17,3 L7,3 C5.9,3 5,3.9 5,5 L5,21 L12,18 L19,21 L19,5 C19,3.9 18.1,3 17,3 Z M17,18 L12,15.82 L7,18 L7,5 L17,5 L17,18 Z" /> />
+</svg>
+      <span class="status-label on_shelf_indicator">
+        <i aria-hidden="true" class=" icon-ok-circled"></i>
+      </span>
+</a>  </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="secondary_info list_item_section visible-md visible-lg">
+        <span class="format">
+    <i aria-hidden="true" class=" icon-book"></i>Book
+     - 2022        
+      | First edition.
+  </span>
+
+      <!-- BESTSELLERS INFO -->
+  <span class="value bestSellerCategory">Children&#x27;s Picture Books</span>
+
+    <span class="value weeksOnList">8 weeks on list</span>
+
+    <div class="dataPair clearfix">
+      <span class="label">Position:</span>
+      <span class="value">2</span>
+    </div>
+
+    <div class="dataPair clearfix">
+      <span class="label">Last Week:</span>
+      <span class="value">3</span>
+    </div>
+
+    </div>
+
+    <div class="row circ_info list_item_section">
+      <div class="col-sm-3">
+        <div class="hidden-md hidden-lg">  <span class="format">
+    <i aria-hidden="true" class=" icon-book"></i>Book
+     - 2022        
+      | First edition.
+  </span>
+</div>
+            <span class="label">
+      <span class="value callNumber showOnPrint">
+        REYNO
+      </span>
+    </span>
+
+      </div>
+
+      <div class="col-sm-5 text_right_sm availability_block">
+            
+
+            <span class="label availability">
+                    <span role="presentation" class="item_not_available" testid="item_availability">All copies in use. </span>
+                        <a href="/item/show_circulation/1350504026?search_scope=ottawa" class="circInfo value underlined location_info" data-analytics="{&quot;event&quot;:&quot;bc.checkAvailability&quot;,&quot;payload&quot;:{&quot;gtmCategory&quot;:&quot;v2-availability&quot;,&quot;gtmLabel&quot;:&quot;all copies in use. | availability details&quot;,&quot;gtmAction&quot;:&quot;v2-view&quot;,&quot;gtmValue&quot;:1}}" id="circ_info_trigger_1350504026_0.3478580551326046" role="button" testid="availability_details">Availability details</a> 
+
+              
+            </span>
+            <span class="label">
+                    <span class="holdposition">  
+      Holds: 51 on 18 copies    
+    </span>   
+
+            </span>
+
+      </div>
+
+      <div class="col-sm-4 text_right_sm">
+          
+
+          <span class="hold_button" data-bundle="block_button" data-js="hold_button_container">
+              <a
+  href="/holds/select_hold/1350504026?j_callback=hold_popup_1350504026&amp;responsive=true"
+  name="hold_popup_1350504026"
+  class="btn btn-transactional btn-block   circ_button"
+  id="hold_popup_1350504026"
+  testid="hold_button"
+  data-test-id="hold-button"
+  data-js="request-hold-button"
+  data-ga-category="hold"
+  data-ga-label="Place Hold button">
+Place hold</a>
+
+</span>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div data-alaytics='{ "SubFeature": "Bib" }' id="bib2581846" class="col-xs-12 list_item_outer clearfix" data-js="batch-action-item bib-list-item">
+  <div class="jacket_cover_container visible-md visible-lg col-md-2 col-lg-2">
+    		<div class='jacketCoverDiv'><img alt="Con Pollo" class="jacketCover bib_detail" data-js="" fallback="//cor-cdn-static.bibliocommons.com/assets/default_covers/icon-book-93409e4decdf10c55296c91a97ac2653.png" id="-2581846" src="https://secure.syndetics.com/index.aspx?isbn=9781250830418/MC.GIF&amp;client=ottap&amp;type=xw12&amp;oclc=" title="Con Pollo" /></div>
+  </div>
+
+  <div class="bg_white listItem col-md-10 col-xs-12">
+    <div class="row top_info list_item_section">
+      <div class="col-xs-10 col-sm-8">
+        <div class="pull-left visible-xs visible-sm">
+          		<div class='jacketCoverDiv'><img alt="Con Pollo" class="jacketCover bib_detail" data-js="" fallback="//cor-cdn-static.bibliocommons.com/assets/default_covers/icon-book-93409e4decdf10c55296c91a97ac2653.png" id="-2581846" src="https://secure.syndetics.com/index.aspx?isbn=9781250830418/MC.GIF&amp;client=ottap&amp;type=xw12&amp;oclc=" title="Con Pollo" /></div>
+        </div>
+        <span class="title">Con Pollo</span>
+        
+          
+
+        <div class="rating">
+          
+<div class="cp_ratings  " data-rating_value="0" data-js="ratings" data-read_only="true" data-bib_id="" data-inline_messaging="true" >
+  <div class="rating_wrapper rating_large rating_average" data-js="rating-wrapper">
+    <div class=" rating_icons" data-js="rating-icons" style="width: 0%;">
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+
+      <div class="col-xs-2 col-sm-4 text-right_sm">
+        <div class="hidden-xs">
+          
+        </div>
+        <div class="hidden-sm hidden-md hidden-lg">
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="secondary_info list_item_section visible-md visible-lg">
+        <span class="format">
+    <i aria-hidden="true" class=" icon-book"></i>Book
+      </span>
+
+      <!-- BESTSELLERS INFO -->
+  <span class="value bestSellerCategory">Children&#x27;s Picture Books</span>
+
+    <span class="value weeksOnList">1 week on list</span>
+
+    <div class="dataPair clearfix">
+      <span class="label">Position:</span>
+      <span class="value">3</span>
+    </div>
+
+
+    </div>
+
+    <div class="row circ_info list_item_section">
+      <div class="col-sm-3">
+        <div class="hidden-md hidden-lg">  <span class="format">
+    <i aria-hidden="true" class=" icon-book"></i>Book
+      </span>
+</div>
+            <span class="label">
+      <span class="value callNumber showOnPrint">
+        
+      </span>
+    </span>
+
+      </div>
+
+      <div class="col-sm-5 text_right_sm availability_block">
+      </div>
+
+      <div class="col-sm-4 text_right_sm">
+                  <button class="btn btn-highlight btn-block" data-js="cp_add_suggestion_overlay" data-suggestion="{&quot;libBibId&quot;:&quot;-2581846&quot;,&quot;title&quot;:&quot;Con Pollo&quot;,&quot;author&quot;:[&quot;Jennifer Lopez&quot;,&quot;Jimmy Fallon&quot;],&quot;isbn&quot;:&quot;9781250830418&quot;}" data-test-id="add_suggestion" name="button" testid="link_makesuggestions" type="submit">Suggest for purchase</button>
+
+
+
+          <span class="hold_button" data-bundle="block_button" data-js="hold_button_container">
+</span>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div data-alaytics='{ "SubFeature": "Bib" }' id="bib2581849" class="col-xs-12 list_item_outer clearfix" data-js="batch-action-item bib-list-item">
+  <div class="jacket_cover_container visible-md visible-lg col-md-2 col-lg-2">
+    		<a href="/item/show/1281929026_the_good,_the_bad,_and_the_spooky" class="jacketCoverLink" target="_parent"><img alt="The Good, the Bad, and the Spooky" class="jacketCover bib_detail" data-js="" fallback="//cor-cdn-static.bibliocommons.com/assets/default_covers/icon-book-93409e4decdf10c55296c91a97ac2653.png" id="1281929026" src="https://secure.syndetics.com/index.aspx?isbn=9780062954541/MC.GIF&amp;client=ottap&amp;type=xw12&amp;oclc=" title="The Good, the Bad, and the Spooky" /></a>
+  </div>
+
+  <div class="bg_white listItem col-md-10 col-xs-12">
+    <div class="row top_info list_item_section">
+      <div class="col-xs-10 col-sm-8">
+        <div class="pull-left visible-xs visible-sm">
+          		<a href="/item/show/1281929026_the_good,_the_bad,_and_the_spooky" class="jacketCoverLink" target="_parent"><img alt="The Good, the Bad, and the Spooky" class="jacketCover bib_detail" data-js="" fallback="//cor-cdn-static.bibliocommons.com/assets/default_covers/icon-book-93409e4decdf10c55296c91a97ac2653.png" id="1281929026" src="https://secure.syndetics.com/index.aspx?isbn=9780062954541/MC.GIF&amp;client=ottap&amp;type=xw12&amp;oclc=" title="The Good, the Bad, and the Spooky" /></a>
+        </div>
+        <span class="title"><a href="/item/show/1281929026_the_good,_the_bad,_and_the_spooky" target="_parent" testid="bib_link" title="The Good, the Bad, and the Spooky (Book)">The Good, the Bad, and the Spooky</a></span>
+        
+          
+	  <span class="author">
+       By <a href="/search?q=John%2C+Jory&amp;search_category=author&amp;t=author" class="author_detail_link" target="_parent" testid="author_search" title="John, Jory">John, Jory</a>
+	  </span>
+
+        <div class="rating">
+          
+<div class="cp_ratings  rated" data-rating_value="7" data-js="ratings" data-read_only="true" data-bib_id="" data-inline_messaging="true" >
+  <div class="rating_wrapper rating_large rating_average" data-js="rating-wrapper">
+    <div class=" rating_icons" data-js="rating-icons" style="width: 70%;">
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+
+      <div class="col-xs-2 col-sm-4 text-right_sm">
+        <div class="hidden-xs">
+          <div class="cp_shelf_dropdown">
+  <div class="shelf_actions" id="id_7fbjphit72i6tc0e3sgrak8070" data-js="shelf-actions">
+    <div class="dropdown clearfix" id="bibStatus_1281929026_id_7fbjphit72i6tc0e3sgrak8070" data-js="add_to_shelf_dropdown">
+      <div class="btn-group add_to_shelf_btn_group">
+          <a href="/collection/add/my/library?bib=1281929026&amp;bib_status=future&amp;button_styles%5B%5D=bootstrap&amp;button_styles%5B%5D=combo_button" class="btn btn-default add_to_shelf_main_action" data-test-id="add-to-shelf-action" rel="nofollow" with_hook="shelf_dropdown"><svg aria-hidden="true" class="svg_icon shelves-outline_icon" focusable="false" height="18" viewBox="0 -1 24 21" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" fill-rule="evenodd" d="M17,3 L7,3 C5.9,3 5,3.9 5,5 L5,21 L12,18 L19,21 L19,5 C19,3.9 18.1,3 17,3 Z M17,18 L12,15.82 L7,18 L7,5 L17,5 L17,18 Z" /> />
+</svg> For Later</a>
+          <a href="#" class="btn btn-default trigger dropdown-toggle " data-target="" data-toggle="dropdown" role="button" testid="add_to_shelf_dropdown">
+              <span class="sr-only">Toggle Dropdown</span>
+</a>        
+        <ul class="dropdown-menu dropdown-menu-right" data-js="add_to_shelf_dropdown_menu">
+            <li><a href="/collection/add/my/library?bib=1281929026&amp;bib_status=past&amp;button_styles%5B%5D=bootstrap&amp;button_styles%5B%5D=combo_button" testid="add_to_Completed" with_hook="shelf_dropdown">Completed</a></li>
+            <li><a href="/collection/add/my/library?bib=1281929026&amp;bib_status=present&amp;button_styles%5B%5D=bootstrap&amp;button_styles%5B%5D=combo_button" testid="add_to_In_Progress" with_hook="shelf_dropdown">In Progress</a></li>
+        </ul>
+</div>    </div>
+  </div>
+</div>
+        </div>
+        <div class="hidden-sm hidden-md hidden-lg">
+            <div class="mini_shelf_btn extra_action_panel ">
+    <a href="/collection/add_bib_overlay/1281929026/for_later?privacy_toggle=true" class="btn btn-default btn-flat pull-right " data-container="body" data-default-tooltip-text="Add to My For Later Shelf" data-ga-action="Add To Shelf" data-ga-category="search" data-ga-label="Mobile" data-js="shelf-inline-overlay hide-when-batch-item-checked action-link" data-on-shelf-text="On my shelf" data-placement="bottom" data-title="Add to My For Later Shelf" data-toggle="tooltip">
+      <svg aria-hidden="true" class="svg_icon shelves-outline_icon" focusable="false" height="20" viewBox="0 -1 24 21" width="20" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" fill-rule="evenodd" d="M17,3 L7,3 C5.9,3 5,3.9 5,5 L5,21 L12,18 L19,21 L19,5 C19,3.9 18.1,3 17,3 Z M17,18 L12,15.82 L7,18 L7,5 L17,5 L17,18 Z" /> />
+</svg>
+      <span class="status-label on_shelf_indicator">
+        <i aria-hidden="true" class=" icon-ok-circled"></i>
+      </span>
+</a>  </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="secondary_info list_item_section visible-md visible-lg">
+        <span class="format">
+    <i aria-hidden="true" class=" icon-book"></i>Book
+     - 2021        
+      | First edition.
+  </span>
+
+      <!-- BESTSELLERS INFO -->
+  <span class="value bestSellerCategory">Children&#x27;s Picture Books</span>
+
+    <span class="value weeksOnList">17 weeks on list</span>
+
+    <div class="dataPair clearfix">
+      <span class="label">Position:</span>
+      <span class="value">4</span>
+    </div>
+
+    <div class="dataPair clearfix">
+      <span class="label">Last Week:</span>
+      <span class="value">4</span>
+    </div>
+
+    </div>
+
+    <div class="row circ_info list_item_section">
+      <div class="col-sm-3">
+        <div class="hidden-md hidden-lg">  <span class="format">
+    <i aria-hidden="true" class=" icon-book"></i>Book
+     - 2021        
+      | First edition.
+  </span>
+</div>
+            <span class="label">
+      <span class="value callNumber showOnPrint">
+        JOHN
+      </span>
+    </span>
+
+      </div>
+
+      <div class="col-sm-5 text_right_sm availability_block">
+            
+
+            <span class="label availability">
+                    <span role="presentation" class="item_not_available" testid="item_availability">All copies in use. </span>
+                        <a href="/item/show_circulation/1281929026?search_scope=ottawa" class="circInfo value underlined location_info" data-analytics="{&quot;event&quot;:&quot;bc.checkAvailability&quot;,&quot;payload&quot;:{&quot;gtmCategory&quot;:&quot;v2-availability&quot;,&quot;gtmLabel&quot;:&quot;all copies in use. | availability details&quot;,&quot;gtmAction&quot;:&quot;v2-view&quot;,&quot;gtmValue&quot;:1}}" id="circ_info_trigger_1281929026_0.31925969654771846" role="button" testid="availability_details">Availability details</a> 
+
+              
+            </span>
+            <span class="label">
+                    <span class="holdposition">  
+      Holds: 49 on 18 copies    
+    </span>   
+
+            </span>
+
+      </div>
+
+      <div class="col-sm-4 text_right_sm">
+          
+
+          <span class="hold_button" data-bundle="block_button" data-js="hold_button_container">
+              <a
+  href="/holds/select_hold/1281929026?j_callback=hold_popup_1281929026&amp;responsive=true"
+  name="hold_popup_1281929026"
+  class="btn btn-transactional btn-block   circ_button"
+  id="hold_popup_1281929026"
+  testid="hold_button"
+  data-test-id="hold-button"
+  data-js="request-hold-button"
+  data-ga-category="hold"
+  data-ga-label="Place Hold button">
+Place hold</a>
+
+</span>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div data-alaytics='{ "SubFeature": "Bib" }' id="bib2581851" class="col-xs-12 list_item_outer clearfix" data-js="batch-action-item bib-list-item">
+  <div class="jacket_cover_container visible-md visible-lg col-md-2 col-lg-2">
+    		<a href="/item/show/1387224026_busy_betty" class="jacketCoverLink" target="_parent"><img alt="Busy Betty" class="jacketCover bib_detail" data-js="" fallback="//cor-cdn-static.bibliocommons.com/assets/default_covers/icon-book-93409e4decdf10c55296c91a97ac2653.png" id="1387224026" src="https://secure.syndetics.com/index.aspx?isbn=9780593465882/MC.GIF&amp;client=ottap&amp;type=xw12&amp;oclc=" title="Busy Betty" /></a>
+  </div>
+
+  <div class="bg_white listItem col-md-10 col-xs-12">
+    <div class="row top_info list_item_section">
+      <div class="col-xs-10 col-sm-8">
+        <div class="pull-left visible-xs visible-sm">
+          		<a href="/item/show/1387224026_busy_betty" class="jacketCoverLink" target="_parent"><img alt="Busy Betty" class="jacketCover bib_detail" data-js="" fallback="//cor-cdn-static.bibliocommons.com/assets/default_covers/icon-book-93409e4decdf10c55296c91a97ac2653.png" id="1387224026" src="https://secure.syndetics.com/index.aspx?isbn=9780593465882/MC.GIF&amp;client=ottap&amp;type=xw12&amp;oclc=" title="Busy Betty" /></a>
+        </div>
+        <span class="title"><a href="/item/show/1387224026_busy_betty" target="_parent" testid="bib_link" title="Busy Betty (Book)">Busy Betty</a></span>
+        
+          
+	  <span class="author">
+       By <a href="/search?q=Witherspoon%2C+Reese&amp;search_category=author&amp;t=author" class="author_detail_link" target="_parent" testid="author_search" title="Witherspoon, Reese">Witherspoon, Reese</a>
+	  </span>
+
+        <div class="rating">
+          
+<div class="cp_ratings  " data-rating_value="0" data-js="ratings" data-read_only="true" data-bib_id="" data-inline_messaging="true" >
+  <div class="rating_wrapper rating_large rating_average" data-js="rating-wrapper">
+    <div class=" rating_icons" data-js="rating-icons" style="width: 0%;">
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+
+      <div class="col-xs-2 col-sm-4 text-right_sm">
+        <div class="hidden-xs">
+          <div class="cp_shelf_dropdown">
+  <div class="shelf_actions" id="id_5c4577oueoa06o9hvqqig9r1tm" data-js="shelf-actions">
+    <div class="dropdown clearfix" id="bibStatus_1387224026_id_5c4577oueoa06o9hvqqig9r1tm" data-js="add_to_shelf_dropdown">
+      <div class="btn-group add_to_shelf_btn_group">
+          <a href="/collection/add/my/library?bib=1387224026&amp;bib_status=future&amp;button_styles%5B%5D=bootstrap&amp;button_styles%5B%5D=combo_button" class="btn btn-default add_to_shelf_main_action" data-test-id="add-to-shelf-action" rel="nofollow" with_hook="shelf_dropdown"><svg aria-hidden="true" class="svg_icon shelves-outline_icon" focusable="false" height="18" viewBox="0 -1 24 21" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" fill-rule="evenodd" d="M17,3 L7,3 C5.9,3 5,3.9 5,5 L5,21 L12,18 L19,21 L19,5 C19,3.9 18.1,3 17,3 Z M17,18 L12,15.82 L7,18 L7,5 L17,5 L17,18 Z" /> />
+</svg> For Later</a>
+          <a href="#" class="btn btn-default trigger dropdown-toggle " data-target="" data-toggle="dropdown" role="button" testid="add_to_shelf_dropdown">
+              <span class="sr-only">Toggle Dropdown</span>
+</a>        
+        <ul class="dropdown-menu dropdown-menu-right" data-js="add_to_shelf_dropdown_menu">
+            <li><a href="/collection/add/my/library?bib=1387224026&amp;bib_status=past&amp;button_styles%5B%5D=bootstrap&amp;button_styles%5B%5D=combo_button" testid="add_to_Completed" with_hook="shelf_dropdown">Completed</a></li>
+            <li><a href="/collection/add/my/library?bib=1387224026&amp;bib_status=present&amp;button_styles%5B%5D=bootstrap&amp;button_styles%5B%5D=combo_button" testid="add_to_In_Progress" with_hook="shelf_dropdown">In Progress</a></li>
+        </ul>
+</div>    </div>
+  </div>
+</div>
+        </div>
+        <div class="hidden-sm hidden-md hidden-lg">
+            <div class="mini_shelf_btn extra_action_panel ">
+    <a href="/collection/add_bib_overlay/1387224026/for_later?privacy_toggle=true" class="btn btn-default btn-flat pull-right " data-container="body" data-default-tooltip-text="Add to My For Later Shelf" data-ga-action="Add To Shelf" data-ga-category="search" data-ga-label="Mobile" data-js="shelf-inline-overlay hide-when-batch-item-checked action-link" data-on-shelf-text="On my shelf" data-placement="bottom" data-title="Add to My For Later Shelf" data-toggle="tooltip">
+      <svg aria-hidden="true" class="svg_icon shelves-outline_icon" focusable="false" height="20" viewBox="0 -1 24 21" width="20" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" fill-rule="evenodd" d="M17,3 L7,3 C5.9,3 5,3.9 5,5 L5,21 L12,18 L19,21 L19,5 C19,3.9 18.1,3 17,3 Z M17,18 L12,15.82 L7,18 L7,5 L17,5 L17,18 Z" /> />
+</svg>
+      <span class="status-label on_shelf_indicator">
+        <i aria-hidden="true" class=" icon-ok-circled"></i>
+      </span>
+</a>  </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="secondary_info list_item_section visible-md visible-lg">
+        <span class="format">
+    <i aria-hidden="true" class=" icon-book"></i>Book
+     - 2022        
+  </span>
+
+      <!-- BESTSELLERS INFO -->
+  <span class="value bestSellerCategory">Children&#x27;s Picture Books</span>
+
+    <span class="value weeksOnList">2 weeks on list</span>
+
+    <div class="dataPair clearfix">
+      <span class="label">Position:</span>
+      <span class="value">5</span>
+    </div>
+
+    <div class="dataPair clearfix">
+      <span class="label">Last Week:</span>
+      <span class="value">2</span>
+    </div>
+
+    </div>
+
+    <div class="row circ_info list_item_section">
+      <div class="col-sm-3">
+        <div class="hidden-md hidden-lg">  <span class="format">
+    <i aria-hidden="true" class=" icon-book"></i>Book
+     - 2022        
+  </span>
+</div>
+            <span class="label">
+      <span class="value callNumber showOnPrint">
+        ON ORDER 2022
+      </span>
+    </span>
+
+      </div>
+
+      <div class="col-sm-5 text_right_sm availability_block">
+            
+
+            <span class="label availability">
+                    <span role="presentation" class="item_on_order" testid="item_availability">On order </span>
+                        <a href="/item/show_circulation/1387224026?search_scope=ottawa" class="circInfo value underlined location_info" data-analytics="{&quot;event&quot;:&quot;bc.checkAvailability&quot;,&quot;payload&quot;:{&quot;gtmCategory&quot;:&quot;v2-availability&quot;,&quot;gtmLabel&quot;:&quot;on order | availability details&quot;,&quot;gtmAction&quot;:&quot;v2-view&quot;,&quot;gtmValue&quot;:1}}" id="circ_info_trigger_1387224026_0.9479908746207141" role="button" testid="availability_details">Availability details</a> 
+
+              
+            </span>
+            <span class="label">
+                    <span class="holdposition">  
+      Holds: 22 on 1 copy    
+    </span>   
+
+            </span>
+
+      </div>
+
+      <div class="col-sm-4 text_right_sm">
+          
+
+          <span class="hold_button" data-bundle="block_button" data-js="hold_button_container">
+              <a
+  href="/holds/select_hold/1387224026?j_callback=hold_popup_1387224026&amp;responsive=true"
+  name="hold_popup_1387224026"
+  class="btn btn-transactional btn-block   circ_button"
+  id="hold_popup_1387224026"
+  testid="hold_button"
+  data-test-id="hold-button"
+  data-js="request-hold-button"
+  data-ga-category="hold"
+  data-ga-label="Place Hold button">
+Place hold</a>
+
+</span>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div data-alaytics='{ "SubFeature": "Bib" }' id="bib2581854" class="col-xs-12 list_item_outer clearfix" data-js="batch-action-item bib-list-item">
+  <div class="jacket_cover_container visible-md visible-lg col-md-2 col-lg-2">
+    		<div class='jacketCoverDiv'><img alt="How to Catch a Witch" class="jacketCover bib_detail" data-js="" fallback="//cor-cdn-static.bibliocommons.com/assets/default_covers/icon-book-93409e4decdf10c55296c91a97ac2653.png" id="-2581854" src="https://secure.syndetics.com/index.aspx?isbn=9781728210353/MC.GIF&amp;client=ottap&amp;type=xw12&amp;oclc=" title="How to Catch a Witch" /></div>
+  </div>
+
+  <div class="bg_white listItem col-md-10 col-xs-12">
+    <div class="row top_info list_item_section">
+      <div class="col-xs-10 col-sm-8">
+        <div class="pull-left visible-xs visible-sm">
+          		<div class='jacketCoverDiv'><img alt="How to Catch a Witch" class="jacketCover bib_detail" data-js="" fallback="//cor-cdn-static.bibliocommons.com/assets/default_covers/icon-book-93409e4decdf10c55296c91a97ac2653.png" id="-2581854" src="https://secure.syndetics.com/index.aspx?isbn=9781728210353/MC.GIF&amp;client=ottap&amp;type=xw12&amp;oclc=" title="How to Catch a Witch" /></div>
+        </div>
+        <span class="title">How to Catch a Witch</span>
+        
+          
+
+        <div class="rating">
+          
+<div class="cp_ratings  " data-rating_value="0" data-js="ratings" data-read_only="true" data-bib_id="" data-inline_messaging="true" >
+  <div class="rating_wrapper rating_large rating_average" data-js="rating-wrapper">
+    <div class=" rating_icons" data-js="rating-icons" style="width: 0%;">
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+
+      <div class="col-xs-2 col-sm-4 text-right_sm">
+        <div class="hidden-xs">
+          
+        </div>
+        <div class="hidden-sm hidden-md hidden-lg">
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="secondary_info list_item_section visible-md visible-lg">
+        <span class="format">
+    <i aria-hidden="true" class=" icon-book"></i>Book
+      </span>
+
+      <!-- BESTSELLERS INFO -->
+  <span class="value bestSellerCategory">Children&#x27;s Picture Books</span>
+
+    <span class="value weeksOnList">6 weeks on list</span>
+
+    <div class="dataPair clearfix">
+      <span class="label">Position:</span>
+      <span class="value">6</span>
+    </div>
+
+    <div class="dataPair clearfix">
+      <span class="label">Last Week:</span>
+      <span class="value">7</span>
+    </div>
+
+    </div>
+
+    <div class="row circ_info list_item_section">
+      <div class="col-sm-3">
+        <div class="hidden-md hidden-lg">  <span class="format">
+    <i aria-hidden="true" class=" icon-book"></i>Book
+      </span>
+</div>
+            <span class="label">
+      <span class="value callNumber showOnPrint">
+        
+      </span>
+    </span>
+
+      </div>
+
+      <div class="col-sm-5 text_right_sm availability_block">
+      </div>
+
+      <div class="col-sm-4 text_right_sm">
+                  <button class="btn btn-highlight btn-block" data-js="cp_add_suggestion_overlay" data-suggestion="{&quot;libBibId&quot;:&quot;-2581854&quot;,&quot;title&quot;:&quot;How to Catch a Witch&quot;,&quot;author&quot;:[&quot;Alice Walstead&quot;],&quot;isbn&quot;:&quot;9781728210353&quot;}" data-test-id="add_suggestion" name="button" testid="link_makesuggestions" type="submit">Suggest for purchase</button>
+
+
+
+          <span class="hold_button" data-bundle="block_button" data-js="hold_button_container">
+</span>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div data-alaytics='{ "SubFeature": "Bib" }' id="bib2581856" class="col-xs-12 list_item_outer clearfix" data-js="batch-action-item bib-list-item">
+  <div class="jacket_cover_container visible-md visible-lg col-md-2 col-lg-2">
+    		<a href="/item/show/1376672026_the_pigeon_will_ride_the_roller_coaster" class="jacketCoverLink" target="_parent"><img alt="The Pigeon Will Ride the Roller Coaster!" class="jacketCover bib_detail" data-js="" fallback="//cor-cdn-static.bibliocommons.com/assets/default_covers/icon-book-93409e4decdf10c55296c91a97ac2653.png" id="1376672026" src="https://secure.syndetics.com/index.aspx?isbn=9781454946861/MC.GIF&amp;client=ottap&amp;type=xw12&amp;oclc=" title="The Pigeon Will Ride the Roller Coaster!" /></a>
+  </div>
+
+  <div class="bg_white listItem col-md-10 col-xs-12">
+    <div class="row top_info list_item_section">
+      <div class="col-xs-10 col-sm-8">
+        <div class="pull-left visible-xs visible-sm">
+          		<a href="/item/show/1376672026_the_pigeon_will_ride_the_roller_coaster" class="jacketCoverLink" target="_parent"><img alt="The Pigeon Will Ride the Roller Coaster!" class="jacketCover bib_detail" data-js="" fallback="//cor-cdn-static.bibliocommons.com/assets/default_covers/icon-book-93409e4decdf10c55296c91a97ac2653.png" id="1376672026" src="https://secure.syndetics.com/index.aspx?isbn=9781454946861/MC.GIF&amp;client=ottap&amp;type=xw12&amp;oclc=" title="The Pigeon Will Ride the Roller Coaster!" /></a>
+        </div>
+        <span class="title"><a href="/item/show/1376672026_the_pigeon_will_ride_the_roller_coaster" target="_parent" testid="bib_link" title="The Pigeon Will Ride the Roller Coaster! (Book)">The Pigeon Will Ride the Roller Coaster!</a></span>
+        
+          
+	  <span class="author">
+       By <a href="/search?q=Willems%2C+Mo&amp;search_category=author&amp;t=author" class="author_detail_link" target="_parent" testid="author_search" title="Willems, Mo">Willems, Mo</a>
+	  </span>
+
+        <div class="rating">
+          
+<div class="cp_ratings  rated" data-rating_value="8" data-js="ratings" data-read_only="true" data-bib_id="" data-inline_messaging="true" >
+  <div class="rating_wrapper rating_large rating_average" data-js="rating-wrapper">
+    <div class=" rating_icons" data-js="rating-icons" style="width: 80%;">
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+
+      <div class="col-xs-2 col-sm-4 text-right_sm">
+        <div class="hidden-xs">
+          <div class="cp_shelf_dropdown">
+  <div class="shelf_actions" id="id_1jkvedmdtsqq3kvi2dqnk9tkre" data-js="shelf-actions">
+    <div class="dropdown clearfix" id="bibStatus_1376672026_id_1jkvedmdtsqq3kvi2dqnk9tkre" data-js="add_to_shelf_dropdown">
+      <div class="btn-group add_to_shelf_btn_group">
+          <a href="/collection/add/my/library?bib=1376672026&amp;bib_status=future&amp;button_styles%5B%5D=bootstrap&amp;button_styles%5B%5D=combo_button" class="btn btn-default add_to_shelf_main_action" data-test-id="add-to-shelf-action" rel="nofollow" with_hook="shelf_dropdown"><svg aria-hidden="true" class="svg_icon shelves-outline_icon" focusable="false" height="18" viewBox="0 -1 24 21" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" fill-rule="evenodd" d="M17,3 L7,3 C5.9,3 5,3.9 5,5 L5,21 L12,18 L19,21 L19,5 C19,3.9 18.1,3 17,3 Z M17,18 L12,15.82 L7,18 L7,5 L17,5 L17,18 Z" /> />
+</svg> For Later</a>
+          <a href="#" class="btn btn-default trigger dropdown-toggle " data-target="" data-toggle="dropdown" role="button" testid="add_to_shelf_dropdown">
+              <span class="sr-only">Toggle Dropdown</span>
+</a>        
+        <ul class="dropdown-menu dropdown-menu-right" data-js="add_to_shelf_dropdown_menu">
+            <li><a href="/collection/add/my/library?bib=1376672026&amp;bib_status=past&amp;button_styles%5B%5D=bootstrap&amp;button_styles%5B%5D=combo_button" testid="add_to_Completed" with_hook="shelf_dropdown">Completed</a></li>
+            <li><a href="/collection/add/my/library?bib=1376672026&amp;bib_status=present&amp;button_styles%5B%5D=bootstrap&amp;button_styles%5B%5D=combo_button" testid="add_to_In_Progress" with_hook="shelf_dropdown">In Progress</a></li>
+        </ul>
+</div>    </div>
+  </div>
+</div>
+        </div>
+        <div class="hidden-sm hidden-md hidden-lg">
+            <div class="mini_shelf_btn extra_action_panel ">
+    <a href="/collection/add_bib_overlay/1376672026/for_later?privacy_toggle=true" class="btn btn-default btn-flat pull-right " data-container="body" data-default-tooltip-text="Add to My For Later Shelf" data-ga-action="Add To Shelf" data-ga-category="search" data-ga-label="Mobile" data-js="shelf-inline-overlay hide-when-batch-item-checked action-link" data-on-shelf-text="On my shelf" data-placement="bottom" data-title="Add to My For Later Shelf" data-toggle="tooltip">
+      <svg aria-hidden="true" class="svg_icon shelves-outline_icon" focusable="false" height="20" viewBox="0 -1 24 21" width="20" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" fill-rule="evenodd" d="M17,3 L7,3 C5.9,3 5,3.9 5,5 L5,21 L12,18 L19,21 L19,5 C19,3.9 18.1,3 17,3 Z M17,18 L12,15.82 L7,18 L7,5 L17,5 L17,18 Z" /> />
+</svg>
+      <span class="status-label on_shelf_indicator">
+        <i aria-hidden="true" class=" icon-ok-circled"></i>
+      </span>
+</a>  </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="secondary_info list_item_section visible-md visible-lg">
+        <span class="format">
+    <i aria-hidden="true" class=" icon-book"></i>Book
+     - 2022        
+  </span>
+
+      <!-- BESTSELLERS INFO -->
+  <span class="value bestSellerCategory">Children&#x27;s Picture Books</span>
+
+    <span class="value weeksOnList">6 weeks on list</span>
+
+    <div class="dataPair clearfix">
+      <span class="label">Position:</span>
+      <span class="value">7</span>
+    </div>
+
+    <div class="dataPair clearfix">
+      <span class="label">Last Week:</span>
+      <span class="value">10</span>
+    </div>
+
+    </div>
+
+    <div class="row circ_info list_item_section">
+      <div class="col-sm-3">
+        <div class="hidden-md hidden-lg">  <span class="format">
+    <i aria-hidden="true" class=" icon-book"></i>Book
+     - 2022        
+  </span>
+</div>
+            <span class="label">
+      <span class="value callNumber showOnPrint">
+        WILLE
+      </span>
+    </span>
+
+      </div>
+
+      <div class="col-sm-5 text_right_sm availability_block">
+            
+
+            <span class="label availability">
+                    <span role="presentation" class="item_not_available" testid="item_availability">All copies in use. </span>
+                        <a href="/item/show_circulation/1376672026?search_scope=ottawa" class="circInfo value underlined location_info" data-analytics="{&quot;event&quot;:&quot;bc.checkAvailability&quot;,&quot;payload&quot;:{&quot;gtmCategory&quot;:&quot;v2-availability&quot;,&quot;gtmLabel&quot;:&quot;all copies in use. | availability details&quot;,&quot;gtmAction&quot;:&quot;v2-view&quot;,&quot;gtmValue&quot;:1}}" id="circ_info_trigger_1376672026_0.319894846666675" role="button" testid="availability_details">Availability details</a> 
+
+              
+            </span>
+            <span class="label">
+                    <span class="holdposition">  
+      Holds: 37 on 36 copies    
+    </span>   
+
+            </span>
+
+      </div>
+
+      <div class="col-sm-4 text_right_sm">
+          
+
+          <span class="hold_button" data-bundle="block_button" data-js="hold_button_container">
+              <a
+  href="/holds/select_hold/1376672026?j_callback=hold_popup_1376672026&amp;responsive=true"
+  name="hold_popup_1376672026"
+  class="btn btn-transactional btn-block   circ_button"
+  id="hold_popup_1376672026"
+  testid="hold_button"
+  data-test-id="hold-button"
+  data-js="request-hold-button"
+  data-ga-category="hold"
+  data-ga-label="Place Hold button">
+Place hold</a>
+
+</span>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div data-alaytics='{ "SubFeature": "Bib" }' id="bib2581858" class="col-xs-12 list_item_outer clearfix" data-js="batch-action-item bib-list-item">
+  <div class="jacket_cover_container visible-md visible-lg col-md-2 col-lg-2">
+    		<a href="/item/show/1281877026_pig_the_monster" class="jacketCoverLink" target="_parent"><img alt="Pig the Monster" class="jacketCover bib_detail" data-js="" fallback="//cor-cdn-static.bibliocommons.com/assets/default_covers/icon-book-93409e4decdf10c55296c91a97ac2653.png" id="1281877026" src="https://secure.syndetics.com/index.aspx?isbn=9781443189927/MC.GIF&amp;client=ottap&amp;type=xw12&amp;oclc=" title="Pig the Monster" /></a>
+  </div>
+
+  <div class="bg_white listItem col-md-10 col-xs-12">
+    <div class="row top_info list_item_section">
+      <div class="col-xs-10 col-sm-8">
+        <div class="pull-left visible-xs visible-sm">
+          		<a href="/item/show/1281877026_pig_the_monster" class="jacketCoverLink" target="_parent"><img alt="Pig the Monster" class="jacketCover bib_detail" data-js="" fallback="//cor-cdn-static.bibliocommons.com/assets/default_covers/icon-book-93409e4decdf10c55296c91a97ac2653.png" id="1281877026" src="https://secure.syndetics.com/index.aspx?isbn=9781443189927/MC.GIF&amp;client=ottap&amp;type=xw12&amp;oclc=" title="Pig the Monster" /></a>
+        </div>
+        <span class="title"><a href="/item/show/1281877026_pig_the_monster" target="_parent" testid="bib_link" title="Pig the Monster (Book)">Pig the Monster</a></span>
+        
+          
+	  <span class="author">
+       By <a href="/search?q=Blabey%2C+Aaron&amp;search_category=author&amp;t=author" class="author_detail_link" target="_parent" testid="author_search" title="Blabey, Aaron">Blabey, Aaron</a>
+	  </span>
+
+        <div class="rating">
+          
+<div class="cp_ratings  " data-rating_value="0" data-js="ratings" data-read_only="true" data-bib_id="" data-inline_messaging="true" >
+  <div class="rating_wrapper rating_large rating_average" data-js="rating-wrapper">
+    <div class=" rating_icons" data-js="rating-icons" style="width: 0%;">
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+
+      <div class="col-xs-2 col-sm-4 text-right_sm">
+        <div class="hidden-xs">
+          <div class="cp_shelf_dropdown">
+  <div class="shelf_actions" id="id_7hhpmgq3ube7lk8edohp5pf7q3" data-js="shelf-actions">
+    <div class="dropdown clearfix" id="bibStatus_1281877026_id_7hhpmgq3ube7lk8edohp5pf7q3" data-js="add_to_shelf_dropdown">
+      <div class="btn-group add_to_shelf_btn_group">
+          <a href="/collection/add/my/library?bib=1281877026&amp;bib_status=future&amp;button_styles%5B%5D=bootstrap&amp;button_styles%5B%5D=combo_button" class="btn btn-default add_to_shelf_main_action" data-test-id="add-to-shelf-action" rel="nofollow" with_hook="shelf_dropdown"><svg aria-hidden="true" class="svg_icon shelves-outline_icon" focusable="false" height="18" viewBox="0 -1 24 21" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" fill-rule="evenodd" d="M17,3 L7,3 C5.9,3 5,3.9 5,5 L5,21 L12,18 L19,21 L19,5 C19,3.9 18.1,3 17,3 Z M17,18 L12,15.82 L7,18 L7,5 L17,5 L17,18 Z" /> />
+</svg> For Later</a>
+          <a href="#" class="btn btn-default trigger dropdown-toggle " data-target="" data-toggle="dropdown" role="button" testid="add_to_shelf_dropdown">
+              <span class="sr-only">Toggle Dropdown</span>
+</a>        
+        <ul class="dropdown-menu dropdown-menu-right" data-js="add_to_shelf_dropdown_menu">
+            <li><a href="/collection/add/my/library?bib=1281877026&amp;bib_status=past&amp;button_styles%5B%5D=bootstrap&amp;button_styles%5B%5D=combo_button" testid="add_to_Completed" with_hook="shelf_dropdown">Completed</a></li>
+            <li><a href="/collection/add/my/library?bib=1281877026&amp;bib_status=present&amp;button_styles%5B%5D=bootstrap&amp;button_styles%5B%5D=combo_button" testid="add_to_In_Progress" with_hook="shelf_dropdown">In Progress</a></li>
+        </ul>
+</div>    </div>
+  </div>
+</div>
+        </div>
+        <div class="hidden-sm hidden-md hidden-lg">
+            <div class="mini_shelf_btn extra_action_panel ">
+    <a href="/collection/add_bib_overlay/1281877026/for_later?privacy_toggle=true" class="btn btn-default btn-flat pull-right " data-container="body" data-default-tooltip-text="Add to My For Later Shelf" data-ga-action="Add To Shelf" data-ga-category="search" data-ga-label="Mobile" data-js="shelf-inline-overlay hide-when-batch-item-checked action-link" data-on-shelf-text="On my shelf" data-placement="bottom" data-title="Add to My For Later Shelf" data-toggle="tooltip">
+      <svg aria-hidden="true" class="svg_icon shelves-outline_icon" focusable="false" height="20" viewBox="0 -1 24 21" width="20" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" fill-rule="evenodd" d="M17,3 L7,3 C5.9,3 5,3.9 5,5 L5,21 L12,18 L19,21 L19,5 C19,3.9 18.1,3 17,3 Z M17,18 L12,15.82 L7,18 L7,5 L17,5 L17,18 Z" /> />
+</svg>
+      <span class="status-label on_shelf_indicator">
+        <i aria-hidden="true" class=" icon-ok-circled"></i>
+      </span>
+</a>  </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="secondary_info list_item_section visible-md visible-lg">
+        <span class="format">
+    <i aria-hidden="true" class=" icon-book"></i>Book
+     - 2021        
+  </span>
+
+      <!-- BESTSELLERS INFO -->
+  <span class="value bestSellerCategory">Children&#x27;s Picture Books</span>
+
+    <span class="value weeksOnList">7 weeks on list</span>
+
+    <div class="dataPair clearfix">
+      <span class="label">Position:</span>
+      <span class="value">8</span>
+    </div>
+
+    <div class="dataPair clearfix">
+      <span class="label">Last Week:</span>
+      <span class="value">6</span>
+    </div>
+
+    </div>
+
+    <div class="row circ_info list_item_section">
+      <div class="col-sm-3">
+        <div class="hidden-md hidden-lg">  <span class="format">
+    <i aria-hidden="true" class=" icon-book"></i>Book
+     - 2021        
+  </span>
+</div>
+            <span class="label">
+      <span class="value callNumber showOnPrint">
+        BLABE
+      </span>
+    </span>
+
+      </div>
+
+      <div class="col-sm-5 text_right_sm availability_block">
+            
+
+            <span class="label availability">
+                    <span role="presentation" class="item_not_available" testid="item_availability">All copies in use. </span>
+                        <a href="/item/show_circulation/1281877026?search_scope=ottawa" class="circInfo value underlined location_info" data-analytics="{&quot;event&quot;:&quot;bc.checkAvailability&quot;,&quot;payload&quot;:{&quot;gtmCategory&quot;:&quot;v2-availability&quot;,&quot;gtmLabel&quot;:&quot;all copies in use. | availability details&quot;,&quot;gtmAction&quot;:&quot;v2-view&quot;,&quot;gtmValue&quot;:1}}" id="circ_info_trigger_1281877026_0.3628139046563511" role="button" testid="availability_details">Availability details</a> 
+
+              
+            </span>
+            <span class="label">
+                    <span class="holdposition">  
+      Holds: 5 on 12 copies    
+    </span>   
+
+            </span>
+
+      </div>
+
+      <div class="col-sm-4 text_right_sm">
+          
+
+          <span class="hold_button" data-bundle="block_button" data-js="hold_button_container">
+              <a
+  href="/holds/select_hold/1281877026?j_callback=hold_popup_1281877026&amp;responsive=true"
+  name="hold_popup_1281877026"
+  class="btn btn-transactional btn-block   circ_button"
+  id="hold_popup_1281877026"
+  testid="hold_button"
+  data-test-id="hold-button"
+  data-js="request-hold-button"
+  data-ga-category="hold"
+  data-ga-label="Place Hold button">
+Place hold</a>
+
+</span>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div data-alaytics='{ "SubFeature": "Bib" }' id="bib2581860" class="col-xs-12 list_item_outer clearfix" data-js="batch-action-item bib-list-item">
+  <div class="jacket_cover_container visible-md visible-lg col-md-2 col-lg-2">
+    		<div class='jacketCoverDiv'><img alt="How to Catch a Monster" class="jacketCover bib_detail" data-js="" fallback="//cor-cdn-static.bibliocommons.com/assets/default_covers/icon-book-93409e4decdf10c55296c91a97ac2653.png" id="-2581860" src="https://secure.syndetics.com/index.aspx?isbn=9781492648949/MC.GIF&amp;client=ottap&amp;type=xw12&amp;oclc=" title="How to Catch a Monster" /></div>
+  </div>
+
+  <div class="bg_white listItem col-md-10 col-xs-12">
+    <div class="row top_info list_item_section">
+      <div class="col-xs-10 col-sm-8">
+        <div class="pull-left visible-xs visible-sm">
+          		<div class='jacketCoverDiv'><img alt="How to Catch a Monster" class="jacketCover bib_detail" data-js="" fallback="//cor-cdn-static.bibliocommons.com/assets/default_covers/icon-book-93409e4decdf10c55296c91a97ac2653.png" id="-2581860" src="https://secure.syndetics.com/index.aspx?isbn=9781492648949/MC.GIF&amp;client=ottap&amp;type=xw12&amp;oclc=" title="How to Catch a Monster" /></div>
+        </div>
+        <span class="title">How to Catch a Monster</span>
+        
+          
+
+        <div class="rating">
+          
+<div class="cp_ratings  " data-rating_value="0" data-js="ratings" data-read_only="true" data-bib_id="" data-inline_messaging="true" >
+  <div class="rating_wrapper rating_large rating_average" data-js="rating-wrapper">
+    <div class=" rating_icons" data-js="rating-icons" style="width: 0%;">
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+
+      <div class="col-xs-2 col-sm-4 text-right_sm">
+        <div class="hidden-xs">
+          
+        </div>
+        <div class="hidden-sm hidden-md hidden-lg">
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="secondary_info list_item_section visible-md visible-lg">
+        <span class="format">
+    <i aria-hidden="true" class=" icon-book"></i>Book
+      </span>
+
+      <!-- BESTSELLERS INFO -->
+  <span class="value bestSellerCategory">Children&#x27;s Picture Books</span>
+
+    <span class="value weeksOnList">5 weeks on list</span>
+
+    <div class="dataPair clearfix">
+      <span class="label">Position:</span>
+      <span class="value">9</span>
+    </div>
+
+    <div class="dataPair clearfix">
+      <span class="label">Last Week:</span>
+      <span class="value">8</span>
+    </div>
+
+    </div>
+
+    <div class="row circ_info list_item_section">
+      <div class="col-sm-3">
+        <div class="hidden-md hidden-lg">  <span class="format">
+    <i aria-hidden="true" class=" icon-book"></i>Book
+      </span>
+</div>
+            <span class="label">
+      <span class="value callNumber showOnPrint">
+        
+      </span>
+    </span>
+
+      </div>
+
+      <div class="col-sm-5 text_right_sm availability_block">
+      </div>
+
+      <div class="col-sm-4 text_right_sm">
+                  <button class="btn btn-highlight btn-block" data-js="cp_add_suggestion_overlay" data-suggestion="{&quot;libBibId&quot;:&quot;-2581860&quot;,&quot;title&quot;:&quot;How to Catch a Monster&quot;,&quot;author&quot;:[&quot;Adam Wallace&quot;],&quot;isbn&quot;:&quot;9781492648949&quot;}" data-test-id="add_suggestion" name="button" testid="link_makesuggestions" type="submit">Suggest for purchase</button>
+
+
+
+          <span class="hold_button" data-bundle="block_button" data-js="hold_button_container">
+</span>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div data-alaytics='{ "SubFeature": "Bib" }' id="bib2581862" class="col-xs-12 list_item_outer clearfix" data-js="batch-action-item bib-list-item">
+  <div class="jacket_cover_container visible-md visible-lg col-md-2 col-lg-2">
+    		<a href="/item/show/1281982026_the_leaf_thief" class="jacketCoverLink" target="_parent"><img alt="The Leaf Thief" class="jacketCover bib_detail" data-js="" fallback="//cor-cdn-static.bibliocommons.com/assets/default_covers/icon-book-93409e4decdf10c55296c91a97ac2653.png" id="1281982026" src="https://secure.syndetics.com/index.aspx?isbn=9781728235202/MC.GIF&amp;client=ottap&amp;type=xw12&amp;oclc=" title="The Leaf Thief" /></a>
+  </div>
+
+  <div class="bg_white listItem col-md-10 col-xs-12">
+    <div class="row top_info list_item_section">
+      <div class="col-xs-10 col-sm-8">
+        <div class="pull-left visible-xs visible-sm">
+          		<a href="/item/show/1281982026_the_leaf_thief" class="jacketCoverLink" target="_parent"><img alt="The Leaf Thief" class="jacketCover bib_detail" data-js="" fallback="//cor-cdn-static.bibliocommons.com/assets/default_covers/icon-book-93409e4decdf10c55296c91a97ac2653.png" id="1281982026" src="https://secure.syndetics.com/index.aspx?isbn=9781728235202/MC.GIF&amp;client=ottap&amp;type=xw12&amp;oclc=" title="The Leaf Thief" /></a>
+        </div>
+        <span class="title"><a href="/item/show/1281982026_the_leaf_thief" target="_parent" testid="bib_link" title="The Leaf Thief (Book)">The Leaf Thief</a></span>
+        
+          
+	  <span class="author">
+       By <a href="/search?q=Hemming%2C+Alice&amp;search_category=author&amp;t=author" class="author_detail_link" target="_parent" testid="author_search" title="Hemming, Alice">Hemming, Alice</a>
+	  </span>
+
+        <div class="rating">
+          
+<div class="cp_ratings  rated" data-rating_value="9" data-js="ratings" data-read_only="true" data-bib_id="" data-inline_messaging="true" >
+  <div class="rating_wrapper rating_large rating_average" data-js="rating-wrapper">
+    <div class=" rating_icons" data-js="rating-icons" style="width: 90%;">
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+
+      <div class="col-xs-2 col-sm-4 text-right_sm">
+        <div class="hidden-xs">
+          <div class="cp_shelf_dropdown">
+  <div class="shelf_actions" id="id_577igh1v6p7tccdu2fhk688mq8" data-js="shelf-actions">
+    <div class="dropdown clearfix" id="bibStatus_1281982026_id_577igh1v6p7tccdu2fhk688mq8" data-js="add_to_shelf_dropdown">
+      <div class="btn-group add_to_shelf_btn_group">
+          <a href="/collection/add/my/library?bib=1281982026&amp;bib_status=future&amp;button_styles%5B%5D=bootstrap&amp;button_styles%5B%5D=combo_button" class="btn btn-default add_to_shelf_main_action" data-test-id="add-to-shelf-action" rel="nofollow" with_hook="shelf_dropdown"><svg aria-hidden="true" class="svg_icon shelves-outline_icon" focusable="false" height="18" viewBox="0 -1 24 21" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" fill-rule="evenodd" d="M17,3 L7,3 C5.9,3 5,3.9 5,5 L5,21 L12,18 L19,21 L19,5 C19,3.9 18.1,3 17,3 Z M17,18 L12,15.82 L7,18 L7,5 L17,5 L17,18 Z" /> />
+</svg> For Later</a>
+          <a href="#" class="btn btn-default trigger dropdown-toggle " data-target="" data-toggle="dropdown" role="button" testid="add_to_shelf_dropdown">
+              <span class="sr-only">Toggle Dropdown</span>
+</a>        
+        <ul class="dropdown-menu dropdown-menu-right" data-js="add_to_shelf_dropdown_menu">
+            <li><a href="/collection/add/my/library?bib=1281982026&amp;bib_status=past&amp;button_styles%5B%5D=bootstrap&amp;button_styles%5B%5D=combo_button" testid="add_to_Completed" with_hook="shelf_dropdown">Completed</a></li>
+            <li><a href="/collection/add/my/library?bib=1281982026&amp;bib_status=present&amp;button_styles%5B%5D=bootstrap&amp;button_styles%5B%5D=combo_button" testid="add_to_In_Progress" with_hook="shelf_dropdown">In Progress</a></li>
+        </ul>
+</div>    </div>
+  </div>
+</div>
+        </div>
+        <div class="hidden-sm hidden-md hidden-lg">
+            <div class="mini_shelf_btn extra_action_panel ">
+    <a href="/collection/add_bib_overlay/1281982026/for_later?privacy_toggle=true" class="btn btn-default btn-flat pull-right " data-container="body" data-default-tooltip-text="Add to My For Later Shelf" data-ga-action="Add To Shelf" data-ga-category="search" data-ga-label="Mobile" data-js="shelf-inline-overlay hide-when-batch-item-checked action-link" data-on-shelf-text="On my shelf" data-placement="bottom" data-title="Add to My For Later Shelf" data-toggle="tooltip">
+      <svg aria-hidden="true" class="svg_icon shelves-outline_icon" focusable="false" height="20" viewBox="0 -1 24 21" width="20" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" fill-rule="evenodd" d="M17,3 L7,3 C5.9,3 5,3.9 5,5 L5,21 L12,18 L19,21 L19,5 C19,3.9 18.1,3 17,3 Z M17,18 L12,15.82 L7,18 L7,5 L17,5 L17,18 Z" /> />
+</svg>
+      <span class="status-label on_shelf_indicator">
+        <i aria-hidden="true" class=" icon-ok-circled"></i>
+      </span>
+</a>  </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="secondary_info list_item_section visible-md visible-lg">
+        <span class="format">
+    <i aria-hidden="true" class=" icon-book"></i>Book
+     - 2021        
+  </span>
+
+      <!-- BESTSELLERS INFO -->
+  <span class="value bestSellerCategory">Children&#x27;s Picture Books</span>
+
+    <span class="value weeksOnList">3 weeks on list</span>
+
+    <div class="dataPair clearfix">
+      <span class="label">Position:</span>
+      <span class="value">10</span>
+    </div>
+
+    <div class="dataPair clearfix">
+      <span class="label">Last Week:</span>
+      <span class="value">5</span>
+    </div>
+
+    </div>
+
+    <div class="row circ_info list_item_section">
+      <div class="col-sm-3">
+        <div class="hidden-md hidden-lg">  <span class="format">
+    <i aria-hidden="true" class=" icon-book"></i>Book
+     - 2021        
+  </span>
+</div>
+            <span class="label">
+      <span class="value callNumber showOnPrint">
+        HEMMI
+      </span>
+    </span>
+
+      </div>
+
+      <div class="col-sm-5 text_right_sm availability_block">
+            
+
+            <span class="label availability">
+                    <span role="presentation" class="item_not_available" testid="item_availability">All copies in use. </span>
+                        <a href="/item/show_circulation/1281982026?search_scope=ottawa" class="circInfo value underlined location_info" data-analytics="{&quot;event&quot;:&quot;bc.checkAvailability&quot;,&quot;payload&quot;:{&quot;gtmCategory&quot;:&quot;v2-availability&quot;,&quot;gtmLabel&quot;:&quot;all copies in use. | availability details&quot;,&quot;gtmAction&quot;:&quot;v2-view&quot;,&quot;gtmValue&quot;:1}}" id="circ_info_trigger_1281982026_0.3519399970094014" role="button" testid="availability_details">Availability details</a> 
+
+              
+            </span>
+            <span class="label">
+                    <span class="holdposition">  
+      Holds: 49 on 9 copies    
+    </span>   
+
+            </span>
+
+      </div>
+
+      <div class="col-sm-4 text_right_sm">
+          
+
+          <span class="hold_button" data-bundle="block_button" data-js="hold_button_container">
+              <a
+  href="/holds/select_hold/1281982026?j_callback=hold_popup_1281982026&amp;responsive=true"
+  name="hold_popup_1281982026"
+  class="btn btn-transactional btn-block   circ_button"
+  id="hold_popup_1281982026"
+  testid="hold_button"
+  data-test-id="hold-button"
+  data-js="request-hold-button"
+  data-ga-category="hold"
+  data-ga-label="Place Hold button">
+Place hold</a>
+
+</span>
+
+      </div>
+    </div>
+  </div>
+</div>    </div>
+  </div>
+  <div class="cp_pagination">
+  <div class="pagination_counts pull-left" testid="paginationCounts">
+    1-10 of 90 items
+  </div>
+  <div class="pagination_nav pull-right text-right" testid="paginationNav">
+
+    <ul class="pagination">
+      <li class="disabled">
+          <a class="inactive arrow">
+            <i aria-hidden="true" class=" icon-angle-left"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+      </li>
+
+
+        <li class="active">
+          <a href="/explore/bestsellers/5925_new_york_times?page=1" class="page_link " data-test-id="" testid="link_page1" title="Page 1">1</a>
+        </li>
+        <li >
+          <a href="/explore/bestsellers/5925_new_york_times?page=2" class="page_link " data-test-id="" testid="link_page2" title="Page 2">2</a>
+        </li>
+        <li >
+          <a href="/explore/bestsellers/5925_new_york_times?page=3" class="page_link " data-test-id="" testid="link_page3" title="Page 3">3</a>
+        </li>
+        <li >
+          <a href="/explore/bestsellers/5925_new_york_times?page=4" class="page_link hidden-xs" data-test-id="" testid="link_page4" title="Page 4">4</a>
+        </li>
+        <li >
+          <a href="/explore/bestsellers/5925_new_york_times?page=5" class="page_link hidden-xs" data-test-id="" testid="link_page5" title="Page 5">5</a>
+        </li>
+        <li >
+          <a href="/explore/bestsellers/5925_new_york_times?page=6" class="page_link hidden-xs" data-test-id="" testid="link_page6" title="Page 6">6</a>
+        </li>
+        <li >
+          <a href="/explore/bestsellers/5925_new_york_times?page=7" class="page_link hidden-xs" data-test-id="" testid="link_page7" title="Page 7">7</a>
+        </li>
+
+        <li><span>&hellip;</span></li>
+        <li><a href="/explore/bestsellers/5925_new_york_times?page=9" class="last_page" data-test-id="pagination-last-page-link" testid="link_lastpage" title="Last page (9)">9</a></li>
+
+      <li >
+          <a href="/explore/bestsellers/5925_new_york_times?page=2" class="arrow" testid="link_nextpage">
+            <i aria-hidden="true" class=" icon-angle-right"></i>
+            <span class="sr-only">
+              Next
+            </span>
+</a>      </li>
+    </ul>
+  </div>
+</div>
+</div>
+        </div>
+        <!-- /#main -->
+
+</div>
+    </div>
+    <!-- /#page -->
+
+</div>
+    <div data-react-class="FeedbackBoxContainer" data-react-props="{}"></div>
+    
+  <div id="footer" class="">
+      <div class="footerContent clearfix container">
+          
+<div class="footerLinks">
+
+  <div class="policy-links">
+    <a href="/info/privacy" testid="footer_link_privacy">Privacy Statement</a>
+    <a href="/info/terms" testid="footer_link_terms">Terms of Use</a>
+    <a href="/info/accessibility" testid="footer_link_accessibility_statement">Accessibility Statement</a>
+  </div>
+</div>
+
+      </div>
+  </div>
+  
+  <div class="container">
+  
+    <div class="appserver">
+  <div class="powered-by">
+    Powered by BiblioCommons.
+  </div>
+  
+  <div class="product-version">
+    BiblioCore: app03 Version 9.10.0 Last updated 2022/10/24 10:58
+  </div>
+</div>
+
+  </div>
+
+
+  <!-- begin POSITIONED ELEMENTS -->
+  
+
+
+  <div class="errorSpace messaging">
+    <div class="errors">[]</div>
+  </div>
+
+
+  <div class="messageSpace messaging">
+    <div class="messages">[]</div>
+  </div>
+
+<div data-analytics='{ "Section":"Messaging" }'>
+  <div class="messaging" data-test-id="top-message-container" id="id_6e4sls85dq32q9ooss0c2otaco">
+  <div class="messageContent">
+    <span class="message-icon"></span>
+    <div class="top_message" id="msg_id_4tu9379vsl953o4mp3k2pjkkus">
+      <a name=""></a>
+</div>  </div>
+  <div class="closeButton" data-js="close_system_message" data-test-id="message-close-button"></div>
+</div>
+<script type="text/javascript" charset="utf-8">
+    registered_messages.push( {element: 'msg_id_4tu9379vsl953o4mp3k2pjkkus', key: [], type: ["message","error"]});
+</script> 
+</div>
+  <div class="cp_bc_modal">
+  <div class="modal fade" id="master_modal" data-test-id="modal-container" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Currently, we cannot cache these templates because the content would change depending on the value of the
+feature flag.-->
+<script type="x-handlebars-template" id="discussion_flag_tpl" charset="utf-8">  
+  <div class="flagging overlay-white" id="flag_{{content_id}}">
+    <div class="flag_selection">
+      <h4>
+        <span class="flag_icon"><i aria-hidden="true" class=" icon-flag-empty"></i></span>
+        Flag this content because:
+          <a href="https://help.bibliocommons.com/025ug/060reporting-inappropriate-content/" class="help_icon blockHijack inline" id="main_help_025ug/060reporting-inappropriate-content/_id_4981ldombeb1iengrqu6mip7cn" target="_blank"><i aria-hidden="true" class=" icon-info-circled"></i></a>
+      </h4>
+        {{#if flag_options.violates_appropriate_use_show_option}} 
+        <div class="types" testid="violates_appropriate_use">          <a href="#" data-js="type_form_trigger" data-type="violates_appropriate_use"><i aria-hidden="true" class=" icon-right-open"></i> Violates Appropriate Use Standards</a>
+</div>        <form accept-charset="UTF-8" action="/{{controller}}/flag/{{content_id}}" class="flag_form" id="flag_form_violates_appropriate_use" method="post" style="display:none;" testid="flag_form_violates_appropriate_use"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="3ALc9x9DQbclNdsga3zMB/gEAcMHdZoqxfrcuOGLm0c=" /></div>          <input data-js="flag_type" id="flag_type" name="flag_type" type="hidden" value="VIOLATES_APPROPRIATE_USE" />
+          <input data-js="java-content-class" id="content_class" name="content_class" type="hidden" value="{{java_content_class}}" />
+          <p>Please review the Appropriate Use standard and tell us which term has been violated.</p>
+<input checked="checked" id="violation_type_UNRELATED" name="violation_type" type="radio" value="UNRELATED" /> Unrelated <br/>
+<input id="violation_type_UNLAWFUL" name="violation_type" type="radio" value="UNLAWFUL" /> Unlawful <br/>
+<input id="violation_type_OBSCENE" name="violation_type" type="radio" value="OBSCENE" /> Obscene <br/>
+<input id="violation_type_MARKETING_SCHEME" name="violation_type" type="radio" value="MARKETING_SCHEME" /> Marketing Scheme <br/>
+<input id="violation_type_ADVERTISING" name="violation_type" type="radio" value="ADVERTISING" /> Advertising <br/>
+<input id="violation_type_PRIVACY_VIOLATION" name="violation_type" type="radio" value="PRIVACY_VIOLATION" /> Privacy Violation <br/>
+<input id="violation_type_VIRUS" name="violation_type" type="radio" value="VIRUS" /> Virus <br/>
+<input id="violation_type_RIGHTS_VIOLATION" name="violation_type" type="radio" value="RIGHTS_VIOLATION" /> Rights Violation <br/>
+<input id="violation_type_CRIMINAL_ADVICE" name="violation_type" type="radio" value="CRIMINAL_ADVICE" /> Criminal Advice <br/>
+<p><label for="accept" class="review_standards"><input class="required" id="accept" name="accept" type="checkbox" value="1" /> I have reviewed the <a href="/info/terms" target="_blank">Appropriate Use Standards</a></label></p>
+
+          <input class="btn btn-primary" name="commit" type="submit" value="Submit" />
+</form>        {{/if}}
+        {{#if flag_options.offensive_show_option}} 
+        <div class="types" testid="offensive">          <a href="#" data-js="type_form_trigger" data-type="offensive"><i aria-hidden="true" class=" icon-right-open"></i> Is offensive (To me or my community)</a>
+</div>        <form accept-charset="UTF-8" action="/{{controller}}/flag/{{content_id}}" class="flag_form" id="flag_form_offensive" method="post" style="display:none;" testid="flag_form_offensive"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="3ALc9x9DQbclNdsga3zMB/gEAcMHdZoqxfrcuOGLm0c=" /></div>          <input data-js="flag_type" id="flag_type" name="flag_type" type="hidden" value="OFFENSIVE" />
+          <input data-js="java-content-class" id="content_class" name="content_class" type="hidden" value="{{java_content_class}}" />
+          <p>This content is offensive because:</p>
+<textarea class="required" id="reason" name="reason" placeholder="Please enter the reason">
+</textarea>
+
+          <input class="btn btn-primary" name="commit" type="submit" value="Submit" />
+</form>        {{/if}}
+        {{#if flag_options.spoiler_show_option}} 
+        <div class="types" testid="spoiler">          <a href="#" data-js="type_form_trigger" data-type="spoiler"><i aria-hidden="true" class=" icon-right-open"></i> Contains spoilers (Gives away the ending)</a>
+</div>        <form accept-charset="UTF-8" action="/{{controller}}/flag/{{content_id}}" class="flag_form" id="flag_form_spoiler" method="post" style="display:none;" testid="flag_form_spoiler"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="3ALc9x9DQbclNdsga3zMB/gEAcMHdZoqxfrcuOGLm0c=" /></div>          <input data-js="flag_type" id="flag_type" name="flag_type" type="hidden" value="SPOILER" />
+          <input data-js="java-content-class" id="content_class" name="content_class" type="hidden" value="{{java_content_class}}" />
+          <p>This content contains spoilers.</p>
+<p>Some people don't want to ruin the ending.</p>
+
+          <input class="btn btn-primary" name="commit" type="submit" value="Submit" />
+</form>        {{/if}}
+    </div>
+  </div>
+</script>
+<!-- For the popout when user clicks "Contains Spoiler" on a tagged UGC. -->
+<script type="x-handlebars-template" id="ugc_flagged_content_spoiler_info" charset="utf-8">
+  <p><b>May contain spoilers</b><br> Spoilers give away details you may not want to know until you've read/watched this yourself.</p>
+</script>
+<!-- For the popout when user clicks "Contains Offensive Content" on a tagged UGC. -->
+<script type="x-handlebars-template" id="ugc_flagged_content_offensive_info" charset="utf-8">
+  <p><b>This content has been tagged as offensive</b><br> This content has been reported by other users as offensive. <a href="/info/terms">Learn more about reported content.</a></p>
+</script>
+
+<script id="dropdown_filter_template" type="x-handlebars-template" charset="UTF-8">
+  <div class="cp_filter_overlay">
+    <h2 class="filter_title" data-js='overlay-title'>{{{title}}}</h2>
+    <div class="list-group">
+      {{#each options}}
+        <a class="list-group-item {{#if active}} active {{/if}}" href="#" data-js="filter-option" data-filter-attribute="{{filterAttribute}}">{{filterLabel}}</a>
+      {{/each}}
+    </div>
+  </div>
+</script>
+<script type="x-handlebars-template" id="list_more_actions_tmpl" charset="utf-8">
+  <div class="more_actions_overlay">
+    <div class="content-header">
+      <button type="button" class="close close_top_right" data-js="close_button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <h4 class="content-title" id="modal_label">
+        {{{sectionTitle}}}
+      </h4>
+    </div>
+    <div class="content-body">
+      <h3 class="inline_bib_title">{{{bibTitle}}}</h3>
+      <div class="more_actions_info" data-js="more_actions_info_container"></div>
+      <div class="list-group more_actions_list" data-js="append-links">
+        
+      </div>
+      <a href="#" data-js="close_button" class="nevermind_link">
+        No, go back
+      </a>
+    </div>
+  </div>
+</script>
+<script data-js="like_button_template" type="text/x-handlebars-template" charset="utf-8">
+  <button class="like_button {{liking_like_status liked}}" data-liked="{{liked}}" data-js="like_button" data-count="{{like_count}}" data-content-id="{{content_id}}" data-resource="{{resource}}">
+    {{liking_like_heart_icon liked}}{{liking_like_state liked display_text="true"}}
+  </button>
+  {{#if like_count_button_enabled}}
+	{{#if like_count}}
+      <button class="like_count_button" data-js="like_count_button">{{format_number_with_commas like_count}} {{liking_like_noun like_count}}</button>
+    {{/if}}
+  {{/if}}
+</script>
+
+<script data-js="like_breakdown_template" type="text/x-handlebars-template" charset="utf-8">
+  <a href="#" class="like_breakdown_close" data-js="like_breakdown_close"><i aria-hidden="true" class=" icon-cancel"></i></a>
+  {{#liking_ifContentHasLikes like_count}}
+    <h4 class="like_breakdown_heading">
+        {{#liking_if_single_user_liked like_count}}
+          {{liking_liked_users_count like_count}} likes this
+        {{else}}
+          {{liking_liked_users_count like_count}} like this
+        {{/liking_if_single_user_liked}}
+    </h4>
+    <span class="like_usernames">
+      <i aria-hidden="true" class=" icon-heart"></i>
+      {{#if liked}}
+        You{{#liking_unlessContentOnlyHasOneLike like_count}},{{/liking_unlessContentOnlyHasOneLike}}
+      {{/if}}
+      {{#each liked_users.users}}
+        {{#if is_active}}
+          <a class="like_username" href="/user_profile/{{id}}">{{username}}</a>{{#unless @last}},{{/unless}}
+        {{else}}
+          <span class="like_username" title="Inactive User">{{username}}</span>{{#unless @last}},{{/unless}}
+        {{/if}}
+      {{/each}}
+    </span>
+
+    {{#if liked_users.see_more}}
+      <div class="like_usernames_see_more_wrap">
+        <a href="{{url}}" data-js="like_breakdown_see_more">See more<i aria-hidden="true" class=" icon-down-dir"></i></a>
+        <i aria-hidden="true" class="hidden icon-spinner" data-js="liked_users_spinner"></i>
+      </div>
+    {{/if}}
+
+  {{else}}
+    <h4 class="like_breakdown_heading">No one has liked this yet. Be the first!</h4>
+  {{/liking_ifContentHasLikes}}
+</script>
+<script id="tmpl_save_search_form" type="text/x-handlebars">
+  <form accept-charset="UTF-8" action="/user/save_search" class="form-inline save_search_form" data-js="save_search_form" data-remote="true" data-type="json" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="3ALc9x9DQbclNdsga3zMB/gEAcMHdZoqxfrcuOGLm0c=" /></div>
+    <div data-js="messaging">
+    </div>
+    <button type="button" class="close close_top_right" data-js="close_button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <input type="hidden" name="search_string" data-js="search_string">
+    <input type="hidden" name="inline_messaging" value="true">
+    <input type="hidden" name="original_search_name" data-js="original_search_name">
+    <div class="search_prompt">
+      <div class="form-group">
+        <label for="search_name">
+          Save search as:
+        </label>
+        <input type="text" name="search_name" data-js="search_name" required class="form-control search_name_field" maxlength="100" value="{{current_query}}">
+
+        <div class="form_buttons">
+          <button type="submit" class="btn btn-primary" data-saving-text="<i class='icon-spinner animate-spin'></i> Saving..." data-js="save_button">
+            <i aria-hidden="true" class=" icon-ok"></i> Save it
+          </button>
+          <a href="#" data-js="close_button" class="btn btn-default">
+            Cancel
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="duplicate_search_prompt">
+      <div class="form-group">
+        <span>
+          You already have a search saved as "<span class="replace_query" data-js="search_name_replace"></span>". Replace it with this one?
+        </span>
+        <div class="form_buttons">
+          <button type="submit" class="btn btn-primary" data-saving-text="<i class='icon-spinner animate-spin'></i> Saving..." data-js="save_button" name="replace" value="true">
+            Yes, replace it
+          </button>
+
+          <a href="#" data-js="choose_new_name" class="btn btn-default">
+            Choose new name
+          </a>
+
+          <a href="#" data-js="close_button" class="btn btn-default">
+            Cancel
+          </a>
+        </div>
+      </div>
+    </div>
+</form></script>
+<script type="x-handlebars-template" id="confirmation_prompt_tpl" charset="utf-8">
+	<div class="content-header">
+  <button type="button" class="close close_top_right" data-js="close_button" data-test-id="modal-close-button">
+    <span aria-hidden="true">&times;</span>
+    <span class="sr-only">Close Dialog</span>
+  </button>
+  <h4 class="content-title" id="modal_label">
+          {{#if title}}
+        {{title}}
+      {{else}}
+        Are you sure?
+      {{/if}}
+
+  </h4>
+</div>
+<div class="content-body">
+  
+	  <p>Caution: This cannot be undone.</p>
+		{{#if message}}<p> {{message}}</p>{{/if}}
+			<label for="conf_prompt_ignore" data-js="confirmation-prompt-do-not-show-again">
+			<input data-js="pretty-checkbox conf_prompt_ignore" id="conf_prompt_ignore" name="conf_prompt_ignore" testid="conf_checkbox" type="checkbox" value="1" /> 
+			Don't show this message again
+			</label>
+
+</div>
+  <div class="content-footer">
+      		<input class="btn btn-transactional" data-js="conf_proceed_btn" data-test-id="confirmation-proceed-button" name="commit" testid="conf_proceed_btn" type="submit" value="Yes, I'm sure" />
+		<a href="#" class="nevermind_link link_contextual" data-js="close_button" testid="conf_cancel_btn">No, go back</a>
+
+  </div>
+</script>
+
+<script data-js="user_card_template" type="text/x-handlebars-template" charset="utf-8">
+  <div class="card" testid="user_card_hover_{{id}}" data-test-id="user-card-content-{{id}}">
+    <div class="row card-row">
+      <div class="col-xs-3">
+        <span class="cp_user_avatar md {{libraryMembership}}" testid="user_avatar">
+          <a href="/user_profile/{{id}}">
+            {{#if avatar}}
+              <img src="{{avatar}}" class="img-circle">
+            {{else}}
+              <div class="img-circle initial"><span>{{initial}}</span></div>
+            {{/if}}
+          </a>
+        </span>
+      </div>
+
+      <div class="col-xs-9 user-card-info">
+        <h4 class="user-card-username">
+          <a 
+            href="/user_profile/{{id}}" 
+            title="{{name}}'s Profile"
+            testid="user_profile_link"
+            data-ga-category="user_card"
+            data-ga-label="User Profile Link">
+            {{name}}
+          </a>
+        </h4>
+
+        {{#if libraryName}}
+          <p>{{libraryName}}</p>
+        {{/if}}
+
+        {{#if staff}}<p><span class="cp_staff_stamp">Library Staff</span></p>{{/if}}
+
+        <p>
+          <a 
+            href="/user_profile/{{id}}" 
+            title="{{name}}'s Profile" 
+            data-ga-category="user_card" 
+            data-ga-label="User Profile Link"
+            data-test-id="user-profile-link"
+          >
+            View Profile
+          </a>
+        </p>
+
+        <p>  <a href="/user/login" class="btn btn-secondary btn-flat btn-sm" testid="logged_out_follow_user"><i aria-hidden="true" class=" icon-user-plus"></i>Follow</a>
+  <a href="/user/login" class="btn btn-secondary btn-flat btn-sm" testid="logged_out_ignore_user"><i aria-hidden="true" class=" icon-block"></i>Ignore</a>
+</p>
+        
+        {{#if is_currently_logged_in_user}}<div class="status-label status-label-info">This is me!</div>{{/if}}
+      </div>
+    </div>
+  </div>
+</script>
+
+<script charset="utf-8" data-js="tour_dots_template" type="text/x-handlebars-template">
+  <div class="pagination_dots">
+    {{#each steps}}
+      <div class="dot {{#isTourDotFilledIn ../currentStep @index}}active{{/isTourDotFilledIn}}"></div>
+    {{/each}}
+  </div>
+</script>
+  <div id="overlay" aria-hidden="true" role="application" data-js="overlay-container" data-test-id="overlay-container">
+  <div class="overlay-backdrop"></div>
+  <div class="overlay-inner">
+    <div class="overlay-body" data-test-id="overlay-body"></div>
+    <a href="#close-overlay" class="overlay-close js-close-trigger" data-test-id="overlay-close">
+      <i aria-hidden="true" class=" icon-cancel"></i>
+      <span class="sr-only">Close Dialog</span>
+    </a>
+  </div>
+</div>
+  <div class="popup-box-ie-position">
+  <div class="popout-box">
+    <div id="popout-box-content" aria-live="polite" aria-atomic="true" aria-relevant="additions"></div>
+    <div class="popout-box-border"></div>
+    <div class="popout-box-arrow"></div>
+  </div>
+</div>
+  
+<div class="spinner " data-test-id="" id="globalSpinner">
+	<img alt="" data-test-id="spinner-image" src="//cor-cdn-static.bibliocommons.com/assets/ajax-loader-2ad22ee6988a62b7f1661cb696219501.gif" title="" />
+</div>
+  <a class="btn btn-secondary cp_sticky_tab btn-float back_to_top" data-bottom="30" data-right="0" data-js="sticky_tab back_to_top">
+  <i aria-hidden="true" class=" icon-up"></i> To Top
+</a> 
+  
+  <!-- end POSITIONED ELEMENTS -->
+
+</div>
+<!-- /#ct_controller -->
+
+<!-- begin JS BLOCK -->
+  <script src="//cor-cdn-static.bibliocommons.com/assets/vendor-8b62f51688d44fede5e5f3b4d64b7ba8.js" type="text/javascript"></script>
+  <script type="text/javascript" src="/v2/sdk.js"></script>
+  
+  <script src="//cor-cdn-static.bibliocommons.com/assets/core-81d20c140346a97912b9d456245585c0.js" type="text/javascript"></script>
+  <script src="//cor-cdn-static.bibliocommons.com/assets/controllers/bestsellers-48b6f8b5c36683a66cb0f0204ecdcc27.js" type="text/javascript"></script>
+  
+
+
+
+
+
+
+
+
+
+  <script>
+    if (BiblioCommonsSDK && BiblioCommonsSDK.onAnalyticsReady) {
+      BiblioCommonsSDK.onAnalyticsReady(function(analytics) {
+        analytics.trackPageView();
+      });
+    } else {
+      console.error('BiblioCommonsSDK with onAnalyticsReady handler not found');
+    }
+  </script>
+
+<!-- end JS BLOCK -->
+</body>
+</html>
+
